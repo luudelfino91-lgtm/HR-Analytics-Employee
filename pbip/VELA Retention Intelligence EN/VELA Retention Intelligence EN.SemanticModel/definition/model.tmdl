@@ -1,0 +1,17 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+
+ref table fEmployeeTurnover
+ref table dDepartment
+ref table dSalaryRange
+ref table dTenureBucket
+ref table dPerformanceCluster
+ref table dExitArchetype
+ref table _Measures
+ref table 'Cost Adjustment'
+ref table 'Retention Success'
+
+ref cultureInfo en-US

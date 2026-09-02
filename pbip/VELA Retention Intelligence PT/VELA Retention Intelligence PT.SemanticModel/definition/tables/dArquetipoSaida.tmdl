@@ -1,0 +1,26 @@
+table dArquetipoSaida
+	lineageTag: de0e90b6-d1f9-42db-bbcb-72b43b054108
+
+	column chave_arquetipo_saida
+		dataType: int64
+		isHidden
+		lineageTag: ee089f7d-c7f0-45c2-8288-466d047113ab
+		summarizeBy: none
+		sourceColumn: chave_arquetipo_saida
+
+	column nome_arquetipo
+		dataType: string
+		lineageTag: 1f4472fd-1f93-4dda-94b4-239b3ee5f054
+		summarizeBy: none
+		sourceColumn: nome_arquetipo
+
+	partition dArquetipoSaida = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_pt\dArquetipoSaida.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"chave_arquetipo_saida", Int64.Type}, {"nome_arquetipo", type text}}, "en-US")
+				in
+				    Typed
+

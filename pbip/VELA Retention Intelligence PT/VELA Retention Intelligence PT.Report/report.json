@@ -1,0 +1,718 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"customTheme\":{\"name\":\"VELA People Analytics.json\",\"type\":1,\"version\":{\"visual\":\"1.8.79\",\"report\":\"2.0.79\",\"page\":\"1.3.79\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useStylableVisualContainerHeader\":true,\"useEnhancedTooltips\":false}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "VELA People Analytics.json",
+            "path": "VELA People Analytics.json",
+            "type": 201
+          },
+          {
+            "name": "door.png",
+            "path": "door.png",
+            "type": 100
+          },
+          {
+            "name": "gauge.png",
+            "path": "gauge.png",
+            "type": 100
+          },
+          {
+            "name": "money.png",
+            "path": "money.png",
+            "type": 100
+          },
+          {
+            "name": "people.png",
+            "path": "people.png",
+            "type": 100
+          },
+          {
+            "name": "star.png",
+            "path": "star.png",
+            "type": 100
+          },
+          {
+            "name": "target.png",
+            "path": "target.png",
+            "type": 100
+          },
+          {
+            "name": "trend.png",
+            "path": "trend.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D1B28'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Diagnóstico Estratégico",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"i0013\",\"layouts\":[{\"id\":0,\"position\":{\"x\":266,\"y\":96,\"z\":31000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"gauge.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 266.00,
+          "y": 96.00,
+          "z": 31000.00
+        },
+        {
+          "config": "{\"name\":\"i0017\",\"layouts\":[{\"id\":0,\"position\":{\"x\":502,\"y\":96,\"z\":32000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"people.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 502.00,
+          "y": 96.00,
+          "z": 32000.00
+        },
+        {
+          "config": "{\"name\":\"i0021\",\"layouts\":[{\"id\":0,\"position\":{\"x\":738,\"y\":96,\"z\":33000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"money.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 738.00,
+          "y": 96.00,
+          "z": 33000.00
+        },
+        {
+          "config": "{\"name\":\"i0025\",\"layouts\":[{\"id\":0,\"position\":{\"x\":974,\"y\":96,\"z\":34000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"star.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 974.00,
+          "y": 96.00,
+          "z": 34000.00
+        },
+        {
+          "config": "{\"name\":\"i0029\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1210,\"y\":96,\"z\":35000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"trend.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 1210.00,
+          "y": 96.00,
+          "z": 35000.00
+        },
+        {
+          "config": "{\"name\":\"s0001\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":11000,\"width\":64,\"height\":720}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0A1622'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 720.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"s0005\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":152,\"z\":18000,\"width\":24,\"height\":3}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2A25C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 3.00,
+          "width": 24.00,
+          "x": 20.00,
+          "y": 152.00,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"s0012\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":98,\"z\":21000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3E82CC'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 88.00,
+          "y": 98.00,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"s0016\",\"layouts\":[{\"id\":0,\"position\":{\"x\":324,\"y\":98,\"z\":23000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DE7024'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 324.00,
+          "y": 98.00,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"s0020\",\"layouts\":[{\"id\":0,\"position\":{\"x\":560,\"y\":98,\"z\":25000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DE7024'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 560.00,
+          "y": 98.00,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"s0024\",\"layouts\":[{\"id\":0,\"position\":{\"x\":796,\"y\":98,\"z\":27000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#D25275'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 796.00,
+          "y": 98.00,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"s0028\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1032,\"y\":98,\"z\":29000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1B9E8F'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 1032.00,
+          "y": 98.00,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"t0002\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":14,\"z\":15000,\"width\":64,\"height\":34}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"▲\",\"textStyle\":{\"fontSize\":\"13pt\",\"color\":\"#3E82CC\",\"fontFamily\":\"Segoe UI\"}},{\"value\":\"▲\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#F2A25C\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 34.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 14.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"t0003\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":48,\"z\":16000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"VELA\",\"textStyle\":{\"fontSize\":\"10pt\",\"fontWeight\":\"bold\",\"color\":\"#FFFFFF\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 48.00,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"t0004\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":120,\"z\":17000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"01\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#FFFFFF\",\"fontFamily\":\"Segoe UI\",\"fontWeight\":\"bold\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 120.00,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"t0006\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":176,\"z\":19000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"02\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#7E93A3\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 176.00,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"t0007\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":232,\"z\":20000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"03\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#7E93A3\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 232.00,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"t0008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":10,\"z\":12000,\"width\":700,\"height\":42}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Diagnóstico Estratégico\",\"textStyle\":{\"fontSize\":\"16pt\",\"fontWeight\":\"bold\",\"color\":\"#F2F7FA\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 42.00,
+          "width": 700.00,
+          "x": 88.00,
+          "y": 10.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"t0009\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":48,\"z\":13000,\"width\":700,\"height\":32}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Inteligência de Retenção · Diagnóstico Estratégico\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#9FB3C2\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 32.00,
+          "width": 700.00,
+          "x": 88.00,
+          "y": 48.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"t0010\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1016,\"y\":24,\"z\":14000,\"width\":240,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"VELA · People Analytics\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "height": 30.00,
+          "width": 240.00,
+          "x": 1016.00,
+          "y": 24.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"t0014\",\"layouts\":[{\"id\":0,\"position\":{\"x\":100,\"y\":163,\"z\":22000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"14.999 colaboradores · retrato atual\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 100.00,
+          "y": 163.00,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"t0018\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336,\"y\":163,\"z\":24000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"probabilidade de saída ≥ 50%\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 336.00,
+          "y": 163.00,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"t0022\",\"layouts\":[{\"id\":0,\"position\":{\"x\":572,\"y\":163,\"z\":26000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"custo de reposição esperado\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 572.00,
+          "y": 163.00,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"t0026\",\"layouts\":[{\"id\":0,\"position\":{\"x\":808,\"y\":163,\"z\":28000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"fila prioritária de intervenção\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 808.00,
+          "y": 163.00,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"t0030\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1044,\"y\":163,\"z\":30000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"premissas do what-if\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 1044.00,
+          "y": 163.00,
+          "z": 30000.00
+        },
+        {
+          "config": "{\"name\":\"v0011\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":84,\"z\":0,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Taxa Real de Rotatividade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"},\"Name\":\"_Medidas.Taxa Real de Rotatividade\",\"NativeReferenceName\":\"Taxa Real de Rotatividade\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"26D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa Real de Rotatividade'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 88.00,
+          "y": 84.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"v0015\",\"layouts\":[{\"id\":0,\"position\":{\"x\":324,\"y\":84,\"z\":1000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Total em Risco (Preditivo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total em Risco (Preditivo)\"},\"Name\":\"_Medidas.Total em Risco (Preditivo)\",\"NativeReferenceName\":\"Total em Risco (Preditivo)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DE7024'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"26D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Colaboradores em Risco'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 324.00,
+          "y": 84.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"v0019\",\"layouts\":[{\"id\":0,\"position\":{\"x\":560,\"y\":84,\"z\":2000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Custo Estimado de Perda (Projetado)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Custo Estimado de Perda (Projetado)\"},\"Name\":\"_Medidas.Custo Estimado de Perda (Projetado)\",\"NativeReferenceName\":\"Custo Estimado de Perda (Projetado)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Perda Projetada'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 560.00,
+          "y": 84.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"v0023\",\"layouts\":[{\"id\":0,\"position\":{\"x\":796,\"y\":84,\"z\":3000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Risco Crítico Alto Desempenho (Qtd)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Risco Crítico Alto Desempenho (Qtd)\"},\"Name\":\"_Medidas.Risco Crítico Alto Desempenho (Qtd)\",\"NativeReferenceName\":\"Risco Crítico Alto Desempenho (Qtd)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#D25275'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"26D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Risco Crítico · Alto Desempenho'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 796.00,
+          "y": 84.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"v0027\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1032,\"y\":84,\"z\":4000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.ROI Potencial de Retenção\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ROI Potencial de Retenção\"},\"Name\":\"_Medidas.ROI Potencial de Retenção\",\"NativeReferenceName\":\"ROI Potencial de Retenção\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1B9E8F'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"26D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ROI de Retenção'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 1032.00,
+          "y": 84.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"v0031\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":212,\"z\":5000,\"width\":560,\"height\":244}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dDepartamento.nome_departamento\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Taxa Real de Rotatividade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dDepartamento\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"nome_departamento\"},\"Name\":\"dDepartamento.nome_departamento\",\"NativeReferenceName\":\"nome_departamento\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"},\"Name\":\"_Medidas.Taxa Real de Rotatividade\",\"NativeReferenceName\":\"Taxa Real de Rotatividade\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3E82CC'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa de rotatividade por departamento'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 244.00,
+          "width": 560.00,
+          "x": 88.00,
+          "y": 212.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"v0032\",\"layouts\":[{\"id\":0,\"position\":{\"x\":664,\"y\":212,\"z\":6000,\"width\":592,\"height\":244}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dDepartamento.nome_departamento\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Custo Estimado de Perda (Projetado)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dDepartamento\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"nome_departamento\"},\"Name\":\"dDepartamento.nome_departamento\",\"NativeReferenceName\":\"nome_departamento\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Custo Estimado de Perda (Projetado)\"},\"Name\":\"_Medidas.Custo Estimado de Perda (Projetado)\",\"NativeReferenceName\":\"Custo Estimado de Perda (Projetado)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Custo Estimado de Perda (Projetado)\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DE7024'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Custo de reposição projetado por departamento'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 244.00,
+          "width": 592.00,
+          "x": 664.00,
+          "y": 212.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"v0033\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":472,\"z\":7000,\"width\":356,\"height\":232}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fRotatividadeColaboradores.faixa_de_risco\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Total de Colaboradores\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"faixa_de_risco\"},\"Name\":\"fRotatividadeColaboradores.faixa_de_risco\",\"NativeReferenceName\":\"faixa_de_risco\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"},\"Name\":\"_Medidas.Total de Colaboradores\",\"NativeReferenceName\":\"Total de Colaboradores\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3E82CC'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Colaboradores por faixa de risco'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 232.00,
+          "width": 356.00,
+          "x": 88.00,
+          "y": 472.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"v0034\",\"layouts\":[{\"id\":0,\"position\":{\"x\":460,\"y\":472,\"z\":8000,\"width\":424,\"height\":232}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fRotatividadeColaboradores.quadrante_risco\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Total de Colaboradores\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"quadrante_risco\"},\"Name\":\"fRotatividadeColaboradores.quadrante_risco\",\"NativeReferenceName\":\"quadrante_risco\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"},\"Name\":\"_Medidas.Total de Colaboradores\",\"NativeReferenceName\":\"Total de Colaboradores\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8E71BC'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Colaboradores por quadrante de risco'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 232.00,
+          "width": 424.00,
+          "x": 460.00,
+          "y": 472.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"v0035\",\"layouts\":[{\"id\":0,\"position\":{\"x\":900,\"y\":472,\"z\":9000,\"width\":172,\"height\":110}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dDepartamento.nome_departamento\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dDepartamento\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"nome_departamento\"},\"Name\":\"dDepartamento.nome_departamento\",\"NativeReferenceName\":\"nome_departamento\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Departamento'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 110.00,
+          "width": 172.00,
+          "x": 900.00,
+          "y": 472.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"v0036\",\"layouts\":[{\"id\":0,\"position\":{\"x\":900,\"y\":598,\"z\":10000,\"width\":172,\"height\":110}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dTempoDeCasa.faixa_tempo_casa\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dTempoDeCasa\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"faixa_tempo_casa\"},\"Name\":\"dTempoDeCasa.faixa_tempo_casa\",\"NativeReferenceName\":\"faixa_tempo_casa\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tempo de casa'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 110.00,
+          "width": 172.00,
+          "x": 900.00,
+          "y": 598.00,
+          "z": 10000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D1B28'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Deep Dive Comportamental",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection2",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"s0037\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":5000,\"width\":64,\"height\":720}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0A1622'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 720.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"s0042\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":208,\"z\":13000,\"width\":24,\"height\":3}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2A25C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 3.00,
+          "width": 24.00,
+          "x": 20.00,
+          "y": 208.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"t0038\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":14,\"z\":9000,\"width\":64,\"height\":34}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"▲\",\"textStyle\":{\"fontSize\":\"13pt\",\"color\":\"#3E82CC\",\"fontFamily\":\"Segoe UI\"}},{\"value\":\"▲\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#F2A25C\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 34.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 14.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"t0039\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":48,\"z\":10000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"VELA\",\"textStyle\":{\"fontSize\":\"10pt\",\"fontWeight\":\"bold\",\"color\":\"#FFFFFF\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 48.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"t0040\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":120,\"z\":11000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"01\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#7E93A3\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 120.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"t0041\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":176,\"z\":12000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"02\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#FFFFFF\",\"fontFamily\":\"Segoe UI\",\"fontWeight\":\"bold\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 176.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"t0043\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":232,\"z\":14000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"03\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#7E93A3\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 232.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"t0044\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":10,\"z\":6000,\"width\":700,\"height\":42}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Deep Dive Comportamental\",\"textStyle\":{\"fontSize\":\"16pt\",\"fontWeight\":\"bold\",\"color\":\"#F2F7FA\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 42.00,
+          "width": 700.00,
+          "x": 88.00,
+          "y": 10.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"t0045\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":48,\"z\":7000,\"width\":700,\"height\":32}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Inteligência de Retenção · Deep Dive Comportamental\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#9FB3C2\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 32.00,
+          "width": 700.00,
+          "x": 88.00,
+          "y": 48.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"t0046\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1016,\"y\":24,\"z\":8000,\"width\":240,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"VELA · People Analytics\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "height": 30.00,
+          "width": 240.00,
+          "x": 1016.00,
+          "y": 24.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"v0047\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":84,\"z\":0,\"width\":568,\"height\":248}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fRotatividadeColaboradores.tempo_de_casa_anos\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Taxa Real de Rotatividade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tempo_de_casa_anos\"},\"Name\":\"fRotatividadeColaboradores.tempo_de_casa_anos\",\"NativeReferenceName\":\"tempo_de_casa_anos\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"},\"Name\":\"_Medidas.Taxa Real de Rotatividade\",\"NativeReferenceName\":\"Taxa Real de Rotatividade\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3E82CC'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa de saída por tempo de casa'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 248.00,
+          "width": 568.00,
+          "x": 88.00,
+          "y": 84.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"v0048\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":84,\"z\":1000,\"width\":580,\"height\":248}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fRotatividadeColaboradores.numero_projetos\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Taxa Real de Rotatividade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"numero_projetos\"},\"Name\":\"fRotatividadeColaboradores.numero_projetos\",\"NativeReferenceName\":\"numero_projetos\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"},\"Name\":\"_Medidas.Taxa Real de Rotatividade\",\"NativeReferenceName\":\"Taxa Real de Rotatividade\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DE7024'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa de saída por número de projetos'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 248.00,
+          "width": 580.00,
+          "x": 672.00,
+          "y": 84.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"v0049\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":348,\"z\":2000,\"width\":568,\"height\":348}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fRotatividadeColaboradores.id_colaborador\",\"active\":true}],\"X\":[{\"queryRef\":\"Average(fRotatividadeColaboradores.nivel_satisfacao)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Average(fRotatividadeColaboradores.ultima_avaliacao)\"}],\"Series\":[{\"queryRef\":\"dArquetipoSaida.nome_arquetipo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dArquetipoSaida\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"id_colaborador\"},\"Name\":\"fRotatividadeColaboradores.id_colaborador\",\"NativeReferenceName\":\"id_colaborador\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"nivel_satisfacao\"}},\"Function\":1},\"Name\":\"Average(fRotatividadeColaboradores.nivel_satisfacao)\",\"NativeReferenceName\":\"nivel_satisfacao\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ultima_avaliacao\"}},\"Function\":1},\"Name\":\"Average(fRotatividadeColaboradores.ultima_avaliacao)\",\"NativeReferenceName\":\"ultima_avaliacao\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome_arquetipo\"},\"Name\":\"dArquetipoSaida.nome_arquetipo\",\"NativeReferenceName\":\"nome_arquetipo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"start\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"start\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"fillPoint\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Satisfação × Avaliação (cor = saiu)'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fRotatividadeColaboradores\"}},\"Property\":\"saiu_da_empresa\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"saiu_da_empresa\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"1L\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1}]",
+          "height": 348.00,
+          "width": 568.00,
+          "x": 88.00,
+          "y": 348.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"v0050\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":348,\"z\":3000,\"width\":580,\"height\":166}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dArquetipoSaida.nome_arquetipo\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Taxa Real de Rotatividade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dArquetipoSaida\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"nome_arquetipo\"},\"Name\":\"dArquetipoSaida.nome_arquetipo\",\"NativeReferenceName\":\"nome_arquetipo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"},\"Name\":\"_Medidas.Taxa Real de Rotatividade\",\"NativeReferenceName\":\"Taxa Real de Rotatividade\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1B9E8F'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa de saída por arquétipo de desligamento'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 166.00,
+          "width": 580.00,
+          "x": 672.00,
+          "y": 348.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"v0051\",\"layouts\":[{\"id\":0,\"position\":{\"x\":672,\"y\":530,\"z\":4000,\"width\":580,\"height\":166}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dFaixaSalarial.faixa_salarial\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Taxa Real de Rotatividade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dFaixaSalarial\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"faixa_salarial\"},\"Name\":\"dFaixaSalarial.faixa_salarial\",\"NativeReferenceName\":\"faixa_salarial\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"},\"Name\":\"_Medidas.Taxa Real de Rotatividade\",\"NativeReferenceName\":\"Taxa Real de Rotatividade\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Taxa Real de Rotatividade\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#AD8322'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa de saída por faixa salarial'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 166.00,
+          "width": 580.00,
+          "x": 672.00,
+          "y": 530.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0D1B28'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Cockpit Prescritivo",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection3",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"i0064\",\"layouts\":[{\"id\":0,\"position\":{\"x\":266,\"y\":96,\"z\":24000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"door.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 266.00,
+          "y": 96.00,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"i0068\",\"layouts\":[{\"id\":0,\"position\":{\"x\":502,\"y\":96,\"z\":25000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"money.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 502.00,
+          "y": 96.00,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"i0072\",\"layouts\":[{\"id\":0,\"position\":{\"x\":738,\"y\":96,\"z\":26000,\"width\":26,\"height\":26}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"target.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]}}}",
+          "height": 26.00,
+          "width": 26.00,
+          "x": 738.00,
+          "y": 96.00,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"s0052\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":8000,\"width\":64,\"height\":720}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#0A1622'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 720.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"s0058\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":264,\"z\":17000,\"width\":24,\"height\":3}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2A25C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 3.00,
+          "width": 24.00,
+          "x": 20.00,
+          "y": 264.00,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"s0063\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":98,\"z\":18000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3E82CC'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 88.00,
+          "y": 98.00,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"s0067\",\"layouts\":[{\"id\":0,\"position\":{\"x\":324,\"y\":98,\"z\":20000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1B9E8F'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 324.00,
+          "y": 98.00,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"s0071\",\"layouts\":[{\"id\":0,\"position\":{\"x\":560,\"y\":98,\"z\":22000,\"width\":4,\"height\":84}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DE7024'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "height": 84.00,
+          "width": 4.00,
+          "x": 560.00,
+          "y": 98.00,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"t0053\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":14,\"z\":12000,\"width\":64,\"height\":34}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"▲\",\"textStyle\":{\"fontSize\":\"13pt\",\"color\":\"#3E82CC\",\"fontFamily\":\"Segoe UI\"}},{\"value\":\"▲\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#F2A25C\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 34.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 14.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"t0054\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":48,\"z\":13000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"VELA\",\"textStyle\":{\"fontSize\":\"10pt\",\"fontWeight\":\"bold\",\"color\":\"#FFFFFF\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 48.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"t0055\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":120,\"z\":14000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"01\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#7E93A3\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 120.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"t0056\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":176,\"z\":15000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"02\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#7E93A3\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 176.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"t0057\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":232,\"z\":16000,\"width\":64,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"03\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#FFFFFF\",\"fontFamily\":\"Segoe UI\",\"fontWeight\":\"bold\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "height": 30.00,
+          "width": 64.00,
+          "x": 0.00,
+          "y": 232.00,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"t0059\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":10,\"z\":9000,\"width\":700,\"height\":42}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Cockpit Prescritivo\",\"textStyle\":{\"fontSize\":\"16pt\",\"fontWeight\":\"bold\",\"color\":\"#F2F7FA\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 42.00,
+          "width": 700.00,
+          "x": 88.00,
+          "y": 10.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"t0060\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":48,\"z\":10000,\"width\":700,\"height\":32}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Inteligência de Retenção · Cockpit Prescritivo\",\"textStyle\":{\"fontSize\":\"9pt\",\"color\":\"#9FB3C2\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 32.00,
+          "width": 700.00,
+          "x": 88.00,
+          "y": 48.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"t0061\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1016,\"y\":24,\"z\":11000,\"width\":240,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"VELA · People Analytics\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"right\"}]}}]}}}",
+          "height": 30.00,
+          "width": 240.00,
+          "x": 1016.00,
+          "y": 24.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"t0065\",\"layouts\":[{\"id\":0,\"position\":{\"x\":100,\"y\":163,\"z\":19000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"risco × probabilidade × sucesso\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 100.00,
+          "y": 163.00,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"t0069\",\"layouts\":[{\"id\":0,\"position\":{\"x\":336,\"y\":163,\"z\":21000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"valor esperado retido\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 336.00,
+          "y": 163.00,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"t0073\",\"layouts\":[{\"id\":0,\"position\":{\"x\":572,\"y\":163,\"z\":23000,\"width\":202,\"height\":30}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"custo de ação, todos em risco\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#6E8598\",\"fontFamily\":\"Segoe UI\"}}],\"horizontalTextAlignment\":\"left\"}]}}]}}}",
+          "height": 30.00,
+          "width": 202.00,
+          "x": 572.00,
+          "y": 163.00,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"v0062\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":84,\"z\":0,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Saídas Evitadas Esperadas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Saídas Evitadas Esperadas\"},\"Name\":\"_Medidas.Saídas Evitadas Esperadas\",\"NativeReferenceName\":\"Saídas Evitadas Esperadas\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Saídas evitadas esperadas'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 88.00,
+          "y": 84.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"v0066\",\"layouts\":[{\"id\":0,\"position\":{\"x\":324,\"y\":84,\"z\":1000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Economia Esperada com Retenção\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Economia Esperada com Retenção\"},\"Name\":\"_Medidas.Economia Esperada com Retenção\",\"NativeReferenceName\":\"Economia Esperada com Retenção\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1B9E8F'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Economia esperada'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 324.00,
+          "y": 84.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"v0070\",\"layouts\":[{\"id\":0,\"position\":{\"x\":560,\"y\":84,\"z\":2000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Medidas.Investimento Necessário em Retenção\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Investimento Necessário em Retenção\"},\"Name\":\"_Medidas.Investimento Necessário em Retenção\",\"NativeReferenceName\":\"Investimento Necessário em Retenção\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"22D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Investimento em retenção'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 560.00,
+          "y": 84.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"v0074\",\"layouts\":[{\"id\":0,\"position\":{\"x\":796,\"y\":84,\"z\":3000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Cost Adjustment.Cost Adjustment\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Cost Adjustment\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Cost Adjustment\"},\"Name\":\"Cost Adjustment.Cost Adjustment\",\"NativeReferenceName\":\"Cost Adjustment\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ajuste de custo ×'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 796.00,
+          "y": 84.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"v0075\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1032,\"y\":84,\"z\":4000,\"width\":220,\"height\":112}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Retention Success.Retention Success\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Retention Success\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Retention Success\"},\"Name\":\"Retention Success.Retention Success\",\"NativeReferenceName\":\"Retention Success\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Taxa de sucesso da retenção'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 112.00,
+          "width": 220.00,
+          "x": 1032.00,
+          "y": 84.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"v0076\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88,\"y\":212,\"z\":5000,\"width\":716,\"height\":484}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"fRotatividadeColaboradores.id_colaborador\"},{\"queryRef\":\"dDepartamento.nome_departamento\"},{\"queryRef\":\"fRotatividadeColaboradores.quadrante_risco\"},{\"queryRef\":\"fRotatividadeColaboradores.fator_principal_shap\"},{\"queryRef\":\"fRotatividadeColaboradores.direcao_fator_shap\"},{\"queryRef\":\"_Medidas.Probabilidade Média de Saída\"},{\"queryRef\":\"_Medidas.Custo Estimado de Perda (Projetado)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dDepartamento\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"id_colaborador\"},\"Name\":\"fRotatividadeColaboradores.id_colaborador\",\"NativeReferenceName\":\"id_colaborador\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"nome_departamento\"},\"Name\":\"dDepartamento.nome_departamento\",\"NativeReferenceName\":\"nome_departamento\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"quadrante_risco\"},\"Name\":\"fRotatividadeColaboradores.quadrante_risco\",\"NativeReferenceName\":\"quadrante_risco\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"fator_principal_shap\"},\"Name\":\"fRotatividadeColaboradores.fator_principal_shap\",\"NativeReferenceName\":\"fator_principal_shap\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"direcao_fator_shap\"},\"Name\":\"fRotatividadeColaboradores.direcao_fator_shap\",\"NativeReferenceName\":\"direcao_fator_shap\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Probabilidade Média de Saída\"},\"Name\":\"_Medidas.Probabilidade Média de Saída\",\"NativeReferenceName\":\"Probabilidade Média de Saída\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Custo Estimado de Perda (Projetado)\"},\"Name\":\"_Medidas.Custo Estimado de Perda (Projetado)\",\"NativeReferenceName\":\"Custo Estimado de Perda (Projetado)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridVertical\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridHorizontalColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#1E3850'\"}}}}},\"gridHorizontalWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"rowPadding\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#9FB3C2'\"}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"values\":[{\"properties\":{\"fontColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#C9D6E0'\"}}}}},\"fontColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#C9D6E0'\"}}}}},\"backColorPrimary\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"backColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#17304A'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"total\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Colaboradores em risco crítico — lista de ação'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 484.00,
+          "width": 716.00,
+          "x": 88.00,
+          "y": 212.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"v0077\",\"layouts\":[{\"id\":0,\"position\":{\"x\":820,\"y\":212,\"z\":6000,\"width\":436,\"height\":234}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fRotatividadeColaboradores.fator_principal_shap\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Total de Colaboradores\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fRotatividadeColaboradores\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"fator_principal_shap\"},\"Name\":\"fRotatividadeColaboradores.fator_principal_shap\",\"NativeReferenceName\":\"fator_principal_shap\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"},\"Name\":\"_Medidas.Total de Colaboradores\",\"NativeReferenceName\":\"Total de Colaboradores\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3E82CC'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Principal fator preditivo (SHAP)'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 234.00,
+          "width": 436.00,
+          "x": 820.00,
+          "y": 212.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"v0078\",\"layouts\":[{\"id\":0,\"position\":{\"x\":820,\"y\":462,\"z\":7000,\"width\":436,\"height\":234}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dClusterComportamental.nome_cluster\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Medidas.Total de Colaboradores\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dClusterComportamental\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"_Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"nome_cluster\"},\"Name\":\"dClusterComportamental.nome_cluster\",\"NativeReferenceName\":\"nome_cluster\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"},\"Name\":\"_Medidas.Total de Colaboradores\",\"NativeReferenceName\":\"Total de Colaboradores\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total de Colaboradores\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#8E71BC'\"}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#14293C'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#22405A'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#000000'\"}}}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"75D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Colaboradores por cluster comportamental'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F2F7FA'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]}}}",
+          "height": 234.00,
+          "width": 436.00,
+          "x": 820.00,
+          "y": 462.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "VELA People Analytics.json"
+}

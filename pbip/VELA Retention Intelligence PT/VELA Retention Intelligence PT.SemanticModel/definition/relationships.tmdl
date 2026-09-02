@@ -1,0 +1,20 @@
+relationship rel_dDepartamento
+	fromColumn: fRotatividadeColaboradores.chave_departamento
+	toColumn: dDepartamento.chave_departamento
+
+relationship rel_dFaixaSalarial
+	fromColumn: fRotatividadeColaboradores.chave_faixa_salarial
+	toColumn: dFaixaSalarial.chave_faixa_salarial
+
+relationship rel_dTempoDeCasa
+	fromColumn: fRotatividadeColaboradores.chave_tempo_casa
+	toColumn: dTempoDeCasa.chave_tempo_casa
+
+relationship rel_dClusterComportamental
+	fromColumn: fRotatividadeColaboradores.chave_cluster_comportamental
+	toColumn: dClusterComportamental.chave_cluster_comportamental
+
+relationship rel_dArquetipoSaida
+	fromColumn: fRotatividadeColaboradores.chave_arquetipo_saida
+	toColumn: dArquetipoSaida.chave_arquetipo_saida
+

@@ -1,0 +1,277 @@
+table fRotatividadeColaboradores
+	lineageTag: 83982616-5d44-4374-b8b9-e72697e81403
+
+	column id_colaborador
+		dataType: int64
+		lineageTag: 7af0459c-7fe5-4a39-8175-e554854d3337
+		summarizeBy: none
+		sourceColumn: id_colaborador
+
+	column chave_departamento
+		dataType: int64
+		isHidden
+		lineageTag: 055d48e1-d3df-45d3-99e7-bcc42e0deaa2
+		summarizeBy: none
+		sourceColumn: chave_departamento
+
+	column chave_faixa_salarial
+		dataType: int64
+		isHidden
+		lineageTag: 6864640d-532b-4c73-abd9-ebcf65e2a10b
+		summarizeBy: none
+		sourceColumn: chave_faixa_salarial
+
+	column chave_tempo_casa
+		dataType: int64
+		isHidden
+		lineageTag: 6a09151b-29a0-406f-80ba-1e4dd77d0857
+		summarizeBy: none
+		sourceColumn: chave_tempo_casa
+
+	column chave_cluster_comportamental
+		dataType: int64
+		isHidden
+		lineageTag: 59505d8b-5a22-4a94-bdb1-36192584074f
+		summarizeBy: none
+		sourceColumn: chave_cluster_comportamental
+
+	column chave_arquetipo_saida
+		dataType: int64
+		isHidden
+		lineageTag: 0f46bbfc-5f78-49c2-b522-ac00127043ce
+		summarizeBy: none
+		sourceColumn: chave_arquetipo_saida
+
+	column nivel_satisfacao
+		dataType: double
+		formatString: 0.0%
+		lineageTag: a7719e9d-702a-45ad-bc62-bf56193ca58c
+		summarizeBy: none
+		sourceColumn: nivel_satisfacao
+
+	column ultima_avaliacao
+		dataType: double
+		formatString: 0.0%
+		lineageTag: fc7c797b-4e2b-4855-b19a-5b702077bec6
+		summarizeBy: none
+		sourceColumn: ultima_avaliacao
+
+	column numero_projetos
+		dataType: int64
+		lineageTag: 770b6d23-4b2d-45b1-a92d-9e398804cf94
+		summarizeBy: none
+		sourceColumn: numero_projetos
+
+	column horas_mensais_medias
+		dataType: int64
+		lineageTag: b37a320a-de64-475a-bfcb-cfadd5850c4b
+		summarizeBy: none
+		sourceColumn: horas_mensais_medias
+
+	column tempo_de_casa_anos
+		dataType: int64
+		lineageTag: 61f6975c-387a-40f9-be71-2eeb8fb07500
+		summarizeBy: none
+		sourceColumn: tempo_de_casa_anos
+
+	column sofreu_acidente_trabalho
+		dataType: int64
+		lineageTag: ee548b37-92af-4dcc-b7b2-dff21cab9ecd
+		summarizeBy: none
+		sourceColumn: sofreu_acidente_trabalho
+
+	column saiu_da_empresa
+		dataType: int64
+		lineageTag: 9f453698-4c02-4a09-bcaf-ad6a65ecc1db
+		summarizeBy: none
+		sourceColumn: saiu_da_empresa
+
+	column promovido_ultimos_5_anos
+		dataType: int64
+		lineageTag: 25f692f7-3997-44aa-a13d-1fa51843135d
+		summarizeBy: none
+		sourceColumn: promovido_ultimos_5_anos
+
+	column indice_intensidade_carga
+		dataType: double
+		lineageTag: 3bca14a2-f8c1-4bcf-9818-dc60511636bb
+		summarizeBy: none
+		sourceColumn: indice_intensidade_carga
+
+	column flag_sobrecarregado
+		dataType: int64
+		lineageTag: d24f31ab-9cb1-4bf1-a830-f6fe1b302993
+		summarizeBy: none
+		sourceColumn: flag_sobrecarregado
+
+	column flag_subutilizado
+		dataType: int64
+		lineageTag: 777cd5bb-6b44-4140-8687-f759fec37c7f
+		summarizeBy: none
+		sourceColumn: flag_subutilizado
+
+	column horas_por_projeto
+		dataType: double
+		lineageTag: 0bacd7b6-372c-49df-bde5-1607820dc514
+		summarizeBy: none
+		sourceColumn: horas_por_projeto
+
+	column gap_avaliacao_satisfacao
+		dataType: double
+		lineageTag: 0aee901f-302e-453c-b2ad-4713cdb10bd7
+		summarizeBy: none
+		sourceColumn: gap_avaliacao_satisfacao
+
+	column flag_estrela_insatisfeita
+		dataType: int64
+		lineageTag: 24216c0b-d419-4cb2-b362-882cabea3c9d
+		summarizeBy: none
+		sourceColumn: flag_estrela_insatisfeita
+
+	column flag_confortavel_baixo_desempenho
+		dataType: int64
+		lineageTag: f041da5c-84f5-4e41-a778-8131a220e7b5
+		summarizeBy: none
+		sourceColumn: flag_confortavel_baixo_desempenho
+
+	column flag_janela_critica_carreira
+		dataType: int64
+		lineageTag: d164922e-4939-46ab-8e3e-383dc43fc92c
+		summarizeBy: none
+		sourceColumn: flag_janela_critica_carreira
+
+	column flag_estagnacao_sem_promocao
+		dataType: int64
+		lineageTag: cadb7542-79e5-4886-8791-8466cc0a64ef
+		summarizeBy: none
+		sourceColumn: flag_estagnacao_sem_promocao
+
+	column score_risco_bruto
+		dataType: double
+		lineageTag: 7f6ae7a6-2db4-4c8d-b453-b9ccf3e1a172
+		summarizeBy: none
+		sourceColumn: score_risco_bruto
+
+	column flag_baixa_barreira_saida
+		dataType: int64
+		lineageTag: 3d07abb1-d59a-4fb7-9857-0ffb2e0bed8f
+		summarizeBy: none
+		sourceColumn: flag_baixa_barreira_saida
+
+	column interacao_satisfacao_avaliacao
+		dataType: double
+		lineageTag: c630afe2-e1f4-4fd0-81aa-871b1b672760
+		summarizeBy: none
+		sourceColumn: interacao_satisfacao_avaliacao
+
+	column flag_projeto_extremo
+		dataType: int64
+		lineageTag: 4d4eb21b-c439-49fd-9f17-6f0c2157e646
+		summarizeBy: none
+		sourceColumn: flag_projeto_extremo
+
+	column flag_teto_horas_criticas
+		dataType: int64
+		lineageTag: 9dea4960-da4b-49c2-9435-ce4c945d934b
+		summarizeBy: none
+		sourceColumn: flag_teto_horas_criticas
+
+	column probabilidade_saida
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 71ef5424-c3a4-4c55-9f77-1deff3001a55
+		summarizeBy: none
+		sourceColumn: probabilidade_saida
+
+	column faixa_de_risco
+		dataType: string
+		lineageTag: 0485ec21-4d12-4a8d-9832-25742995cc27
+		summarizeBy: none
+		sourceColumn: faixa_de_risco
+
+	column flag_risco_iminente
+		dataType: int64
+		lineageTag: 54a6d0dc-2a43-4fab-914c-f3d898e8bdf2
+		summarizeBy: none
+		sourceColumn: flag_risco_iminente
+
+	column flag_alto_desempenho
+		dataType: int64
+		lineageTag: 646a50be-febf-45c1-9686-012bf36e5588
+		summarizeBy: none
+		sourceColumn: flag_alto_desempenho
+
+	column quadrante_risco
+		dataType: string
+		lineageTag: 7b81fd4b-45a2-4696-9e7a-245d12987c4a
+		summarizeBy: none
+		sourceColumn: quadrante_risco
+
+	column cluster_comportamental
+		dataType: string
+		lineageTag: 146de9aa-37cb-4eec-bf89-0fca6ebc60c9
+		summarizeBy: none
+		sourceColumn: cluster_comportamental
+
+	column fator_principal_shap
+		dataType: string
+		lineageTag: 3f7e9dc0-a8ca-4896-914d-56720cc31d67
+		summarizeBy: none
+		sourceColumn: fator_principal_shap
+
+	column valor_shap_fator_principal
+		dataType: double
+		lineageTag: 69627fe5-ea24-4d06-85e2-282bff18d7de
+		summarizeBy: none
+		sourceColumn: valor_shap_fator_principal
+
+	column direcao_fator_shap
+		dataType: string
+		lineageTag: c99d45cd-0cb0-4500-b5a7-5080d8f205b8
+		summarizeBy: none
+		sourceColumn: direcao_fator_shap
+
+	column salario_mensal_simulado_brl
+		dataType: double
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		lineageTag: 93e80173-e8b0-492c-abcf-def1ecd67bb4
+		summarizeBy: none
+		sourceColumn: salario_mensal_simulado_brl
+
+	column salario_anual_simulado_brl
+		dataType: double
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		lineageTag: a56b4634-37f8-43fc-92fa-88b12b9d9ec7
+		summarizeBy: none
+		sourceColumn: salario_anual_simulado_brl
+
+	column percentual_custo_reposicao_simulado
+		dataType: double
+		lineageTag: 5d111627-22f1-4700-bb5d-80eb4fc1406c
+		summarizeBy: none
+		sourceColumn: percentual_custo_reposicao_simulado
+
+	column custo_reposicao_simulado_brl
+		dataType: double
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		lineageTag: acd60579-a513-4d32-bb18-def2d9d21ae8
+		summarizeBy: none
+		sourceColumn: custo_reposicao_simulado_brl
+
+	column custo_acao_retencao_simulado_brl
+		dataType: double
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		lineageTag: 2be9d195-6b47-43ee-a149-c47eb817b458
+		summarizeBy: none
+		sourceColumn: custo_acao_retencao_simulado_brl
+
+	partition fRotatividadeColaboradores = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_pt\fRotatividadeColaboradores.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"id_colaborador", Int64.Type}, {"chave_departamento", Int64.Type}, {"chave_faixa_salarial", Int64.Type}, {"chave_tempo_casa", Int64.Type}, {"chave_cluster_comportamental", Int64.Type}, {"chave_arquetipo_saida", Int64.Type}, {"nivel_satisfacao", type number}, {"ultima_avaliacao", type number}, {"numero_projetos", Int64.Type}, {"horas_mensais_medias", Int64.Type}, {"tempo_de_casa_anos", Int64.Type}, {"sofreu_acidente_trabalho", Int64.Type}, {"saiu_da_empresa", Int64.Type}, {"promovido_ultimos_5_anos", Int64.Type}, {"indice_intensidade_carga", type number}, {"flag_sobrecarregado", Int64.Type}, {"flag_subutilizado", Int64.Type}, {"horas_por_projeto", type number}, {"gap_avaliacao_satisfacao", type number}, {"flag_estrela_insatisfeita", Int64.Type}, {"flag_confortavel_baixo_desempenho", Int64.Type}, {"flag_janela_critica_carreira", Int64.Type}, {"flag_estagnacao_sem_promocao", Int64.Type}, {"score_risco_bruto", type number}, {"flag_baixa_barreira_saida", Int64.Type}, {"interacao_satisfacao_avaliacao", type number}, {"flag_projeto_extremo", Int64.Type}, {"flag_teto_horas_criticas", Int64.Type}, {"probabilidade_saida", type number}, {"faixa_de_risco", type text}, {"flag_risco_iminente", Int64.Type}, {"flag_alto_desempenho", Int64.Type}, {"quadrante_risco", type text}, {"cluster_comportamental", type text}, {"fator_principal_shap", type text}, {"valor_shap_fator_principal", type number}, {"direcao_fator_shap", type text}, {"salario_mensal_simulado_brl", type number}, {"salario_anual_simulado_brl", type number}, {"percentual_custo_reposicao_simulado", type number}, {"custo_reposicao_simulado_brl", type number}, {"custo_acao_retencao_simulado_brl", type number}}, "en-US")
+				in
+				    Typed
+

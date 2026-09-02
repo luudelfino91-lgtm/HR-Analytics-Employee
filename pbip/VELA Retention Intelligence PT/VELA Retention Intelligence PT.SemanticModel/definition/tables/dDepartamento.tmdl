@@ -1,0 +1,26 @@
+table dDepartamento
+	lineageTag: 2d8b54f4-be22-4290-b1e0-80e50221c134
+
+	column chave_departamento
+		dataType: int64
+		isHidden
+		lineageTag: 331293e6-f180-49ae-9501-13af1360123e
+		summarizeBy: none
+		sourceColumn: chave_departamento
+
+	column nome_departamento
+		dataType: string
+		lineageTag: ea3e89db-2174-4d43-ac8f-07c7278da6fa
+		summarizeBy: none
+		sourceColumn: nome_departamento
+
+	partition dDepartamento = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_pt\dDepartamento.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"chave_departamento", Int64.Type}, {"nome_departamento", type text}}, "en-US")
+				in
+				    Typed
+

@@ -1,0 +1,26 @@
+table dClusterComportamental
+	lineageTag: 2d22a3f1-627a-46f3-bd45-a653172a375a
+
+	column chave_cluster_comportamental
+		dataType: int64
+		isHidden
+		lineageTag: 0967d62c-d724-4f36-a564-e5e29fdcd1e4
+		summarizeBy: none
+		sourceColumn: chave_cluster_comportamental
+
+	column nome_cluster
+		dataType: string
+		lineageTag: a36121c8-3936-4c70-a661-459bbe132520
+		summarizeBy: none
+		sourceColumn: nome_cluster
+
+	partition dClusterComportamental = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_pt\dClusterComportamental.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"chave_cluster_comportamental", Int64.Type}, {"nome_cluster", type text}}, "en-US")
+				in
+				    Typed
+

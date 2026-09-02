@@ -1,0 +1,11 @@
+table 'Retention Success'
+
+	column 'Retention Success'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: [Value]
+		formatString: 0.00
+
+	partition 'Retention Success' = calculated
+		mode: import
+		source = GENERATESERIES(0, 1, 0.05)

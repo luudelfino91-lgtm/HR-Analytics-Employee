@@ -1,0 +1,14 @@
+table 'Retention Success'
+	lineageTag: 4b0788e8-25c1-476d-bb28-c6966d7f1e26
+
+	column 'Retention Success'
+		dataType: double
+		formatString: 0.00
+		lineageTag: 4339f0fb-958b-4c45-8ea0-7899c24f1070
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition 'Retention Success' = calculated
+		mode: import
+		source = GENERATESERIES(0, 1, 0.05)
+

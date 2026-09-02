@@ -1,0 +1,144 @@
+table _Medidas
+	lineageTag: f1f6c23d-aa4f-4206-ad4b-4f47eef2092f
+
+	measure 'Total de Colaboradores' = COUNTROWS ( fRotatividadeColaboradores )
+		formatString: #,0
+		displayFolder: 01. Taxas
+		lineageTag: d5b79e24-7b1b-4ea7-b732-7ede1813a56d
+
+	measure 'Total de Saídas (Real)' = CALCULATE ( COUNTROWS ( fRotatividadeColaboradores ), fRotatividadeColaboradores[saiu_da_empresa] = 1 )
+		formatString: #,0
+		displayFolder: 01. Taxas
+		lineageTag: 8303b17f-b3f3-49e2-b996-5b61719eb36a
+
+	measure 'Taxa Real de Rotatividade' = DIVIDE ( [Total de Saídas (Real)], [Total de Colaboradores], 0 )
+		formatString: 0.0%
+		displayFolder: 01. Taxas
+		lineageTag: edf28ea1-9dfb-4aa4-8c71-c4b359b92b1e
+
+	measure 'Total em Risco (Preditivo)' = CALCULATE ( COUNTROWS ( fRotatividadeColaboradores ), fRotatividadeColaboradores[flag_risco_iminente] = 1 )
+		formatString: #,0
+		displayFolder: 01. Taxas
+		lineageTag: 6b27efca-6d85-45c7-b921-581cfb948346
+
+	measure 'Taxa Preditiva de Risco' = DIVIDE ( [Total em Risco (Preditivo)], [Total de Colaboradores], 0 )
+		formatString: 0.0%
+		displayFolder: 01. Taxas
+		lineageTag: 3ff0569c-5a46-4a28-83db-a4e1b6b35dfe
+
+	measure 'Probabilidade Média de Saída' = AVERAGE ( fRotatividadeColaboradores[probabilidade_saida] )
+		formatString: 0.0%
+		displayFolder: 01. Taxas
+		lineageTag: a381be0b-1ea2-4d75-9e75-58f53c703a7b
+
+	measure 'Gap Real vs Preditivo' = [Taxa Preditiva de Risco] - [Taxa Real de Rotatividade]
+		formatString: 0.0%
+		displayFolder: 01. Taxas
+		lineageTag: 4738c817-0394-4630-bb76-1b6eeb8ac9fb
+
+	measure 'Fator de Ajuste do Custo de Reposição' = SELECTEDVALUE ( 'Cost Adjustment'[Cost Adjustment], 1 )
+		formatString: 0.00
+		displayFolder: 02. Financeiro
+		lineageTag: 4bff12d0-5fc0-4921-82d7-c214f392d7f9
+
+	measure 'Taxa de Sucesso da Ação de Retenção' = SELECTEDVALUE ( 'Retention Success'[Retention Success], 0.35 )
+		formatString: 0%
+		displayFolder: 02. Financeiro
+		lineageTag: e2f59cd7-435a-466f-b781-307010fb35e4
+
+	measure 'Custo Estimado de Perda (Realizado)' = SUMX ( FILTER ( fRotatividadeColaboradores, fRotatividadeColaboradores[saiu_da_empresa] = 1 ), fRotatividadeColaboradores[custo_reposicao_simulado_brl] ) * [Fator de Ajuste do Custo de Reposição]
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		displayFolder: 02. Financeiro
+		lineageTag: 87e48fda-c73f-4a33-af33-55189c93ace4
+
+	measure 'Custo Estimado de Perda (Projetado)' = SUMX ( FILTER ( fRotatividadeColaboradores, fRotatividadeColaboradores[flag_risco_iminente] = 1 ), fRotatividadeColaboradores[custo_reposicao_simulado_brl] ) * [Fator de Ajuste do Custo de Reposição]
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		displayFolder: 02. Financeiro
+		lineageTag: c8ddb301-40d9-4da8-b917-b74bd9723777
+
+	measure 'Investimento Necessário em Retenção' = SUMX ( FILTER ( fRotatividadeColaboradores, fRotatividadeColaboradores[flag_risco_iminente] = 1 ), fRotatividadeColaboradores[custo_acao_retencao_simulado_brl] )
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		displayFolder: 02. Financeiro
+		lineageTag: 045c53be-efa4-4dc8-a796-4bb52b3aea2b
+
+	measure 'Custo Médio de Reposição por Colaborador em Risco' = DIVIDE ( [Custo Estimado de Perda (Projetado)], [Total em Risco (Preditivo)], 0 )
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		displayFolder: 02. Financeiro
+		lineageTag: 32a44c4f-a6bd-4548-9d5b-652e09c99777
+
+	measure 'Saídas Evitadas Esperadas' = SUMX ( FILTER ( fRotatividadeColaboradores, fRotatividadeColaboradores[flag_risco_iminente] = 1 ), fRotatividadeColaboradores[probabilidade_saida] ) * [Taxa de Sucesso da Ação de Retenção]
+		formatString: #,0
+		displayFolder: 02. Financeiro
+		lineageTag: efa8b59d-1e66-4da8-9f83-8176c9cbfa7d
+
+	measure 'Economia Esperada com Retenção' = SUMX ( FILTER ( fRotatividadeColaboradores, fRotatividadeColaboradores[flag_risco_iminente] = 1 ), fRotatividadeColaboradores[custo_reposicao_simulado_brl] * fRotatividadeColaboradores[probabilidade_saida] ) * [Taxa de Sucesso da Ação de Retenção] * [Fator de Ajuste do Custo de Reposição]
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		displayFolder: 02. Financeiro
+		lineageTag: 381dcf45-4a70-49e6-9061-d8c5d1c7b2cc
+
+	measure 'ROI Potencial de Retenção' = DIVIDE ( [Economia Esperada com Retenção] - [Investimento Necessário em Retenção], [Investimento Necessário em Retenção], 0 )
+		formatString: 0.00"x"
+		displayFolder: 02. Financeiro
+		lineageTag: 453ffdc1-3d50-4cc8-9e22-2aa948057e0e
+
+	measure 'Risco Crítico Alto Desempenho (Qtd)' = CALCULATE ( COUNTROWS ( fRotatividadeColaboradores ), fRotatividadeColaboradores[quadrante_risco] = "Q1 - Risco Crítico / Alto Desempenho" )
+		formatString: #,0
+		displayFolder: 03. Risco Crítico
+		lineageTag: a9a446eb-eba9-41ff-a8b6-a2b63daacbe3
+
+	measure 'Risco Crítico Alto Desempenho (%)' = DIVIDE ( [Risco Crítico Alto Desempenho (Qtd)], [Total de Colaboradores], 0 )
+		formatString: 0.0%
+		displayFolder: 03. Risco Crítico
+		lineageTag: 58fee17c-6323-45d2-882b-e424ad5ee57a
+
+	measure 'Custo de Perda de Alto Desempenho em Risco' = SUMX ( FILTER ( fRotatividadeColaboradores, fRotatividadeColaboradores[quadrante_risco] = "Q1 - Risco Crítico / Alto Desempenho" ), fRotatividadeColaboradores[custo_reposicao_simulado_brl] ) * [Fator de Ajuste do Custo de Reposição]
+		formatString: "R$"#,0;-"R$"#,0;"R$"#,0
+		displayFolder: 03. Risco Crítico
+		lineageTag: 05a166fd-f665-4c0b-91e8-960898a1a4c2
+
+	measure 'Satisfação Média' = AVERAGE ( fRotatividadeColaboradores[nivel_satisfacao] )
+		formatString: 0.0%
+		displayFolder: 04. Segmentação
+		lineageTag: a3f6fffb-16a6-41fb-bbf8-ab598bd09a6b
+
+	measure 'Avaliação Média' = AVERAGE ( fRotatividadeColaboradores[ultima_avaliacao] )
+		formatString: 0.0%
+		displayFolder: 04. Segmentação
+		lineageTag: 4b8445af-876f-4b56-841d-ad6038e7afc9
+
+	measure 'Horas Médias Mensais' = AVERAGE ( fRotatividadeColaboradores[horas_mensais_medias] )
+		formatString: #,0
+		displayFolder: 04. Segmentação
+		lineageTag: b5fb47bc-3092-4797-80c0-31cae2ced5b0
+
+	measure 'Ranking Departamento por Rotatividade' = RANKX ( ALL ( dDepartamento[nome_departamento] ), CALCULATE ( [Taxa Real de Rotatividade] ),, DESC )
+		formatString: 0
+		displayFolder: 04. Segmentação
+		lineageTag: 064b0a5d-bf7a-488f-bd56-e084363aca70
+
+	measure 'Colaboradores em Zona de Projeto Extremo' = CALCULATE ( COUNTROWS ( fRotatividadeColaboradores ), fRotatividadeColaboradores[flag_projeto_extremo] = 1 )
+		formatString: #,0
+		displayFolder: 04. Segmentação
+		lineageTag: 45da4daf-4652-4d1a-b1f7-4d2a7bc93a08
+
+	measure 'Fator Principal Mais Frequente' =
+			VAR T = TOPN ( 1, VALUES ( fRotatividadeColaboradores[fator_principal_shap] ), CALCULATE ( COUNTROWS ( fRotatividadeColaboradores ) ), DESC )
+			RETURN CONCATENATEX ( T, fRotatividadeColaboradores[fator_principal_shap], ", " )
+		displayFolder: 05. Explicabilidade
+		lineageTag: c18feb22-21c0-42e5-bd86-56b3747a1251
+
+	measure 'Precisão do Modelo (Informativo)' = "ROC-AUC 0,994 | PR-AUC 0,989 (XGBoost, holdout 25%) — scoring out-of-fold (5 dobras)"
+		displayFolder: 05. Explicabilidade
+		lineageTag: c85971b4-3dd3-491c-a102-143c75d5fe06
+
+	column _dummy
+		dataType: int64
+		isHidden
+		lineageTag: b40cc6ae-d163-43c3-b414-be97d3ae92c8
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition _Medidas = calculated
+		mode: import
+		source = {BLANK()}
+

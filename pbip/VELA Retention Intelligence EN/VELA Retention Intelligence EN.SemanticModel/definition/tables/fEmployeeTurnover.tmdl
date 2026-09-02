@@ -1,0 +1,233 @@
+table fEmployeeTurnover
+
+	column 'employee_id'
+		dataType: int64
+		sourceColumn: employee_id
+		summarizeBy: none
+
+	column 'department_key'
+		dataType: int64
+		sourceColumn: department_key
+		summarizeBy: none
+		isHidden
+
+	column 'salary_key'
+		dataType: int64
+		sourceColumn: salary_key
+		summarizeBy: none
+		isHidden
+
+	column 'tenure_bucket_key'
+		dataType: int64
+		sourceColumn: tenure_bucket_key
+		summarizeBy: none
+		isHidden
+
+	column 'performance_cluster_key'
+		dataType: int64
+		sourceColumn: performance_cluster_key
+		summarizeBy: none
+		isHidden
+
+	column 'exit_archetype_key'
+		dataType: int64
+		sourceColumn: exit_archetype_key
+		summarizeBy: none
+		isHidden
+
+	column 'satisfaction_level'
+		dataType: double
+		sourceColumn: satisfaction_level
+		summarizeBy: none
+		formatString: 0.0%
+
+	column 'last_evaluation'
+		dataType: double
+		sourceColumn: last_evaluation
+		summarizeBy: none
+		formatString: 0.0%
+
+	column 'number_project'
+		dataType: int64
+		sourceColumn: number_project
+		summarizeBy: none
+
+	column 'average_montly_hours'
+		dataType: int64
+		sourceColumn: average_montly_hours
+		summarizeBy: none
+
+	column 'time_spend_company'
+		dataType: int64
+		sourceColumn: time_spend_company
+		summarizeBy: none
+
+	column 'Work_accident'
+		dataType: int64
+		sourceColumn: Work_accident
+		summarizeBy: none
+
+	column 'left'
+		dataType: int64
+		sourceColumn: left
+		summarizeBy: none
+
+	column 'promotion_last_5years'
+		dataType: int64
+		sourceColumn: promotion_last_5years
+		summarizeBy: none
+
+	column 'workload_intensity_idx'
+		dataType: double
+		sourceColumn: workload_intensity_idx
+		summarizeBy: none
+
+	column 'is_overworked'
+		dataType: int64
+		sourceColumn: is_overworked
+		summarizeBy: none
+
+	column 'is_underutilized'
+		dataType: int64
+		sourceColumn: is_underutilized
+		summarizeBy: none
+
+	column 'hours_per_project'
+		dataType: double
+		sourceColumn: hours_per_project
+		summarizeBy: none
+
+	column 'eval_satisfaction_gap'
+		dataType: double
+		sourceColumn: eval_satisfaction_gap
+		summarizeBy: none
+
+	column 'is_unhappy_star'
+		dataType: int64
+		sourceColumn: is_unhappy_star
+		summarizeBy: none
+
+	column 'is_comfortable_underperformer'
+		dataType: int64
+		sourceColumn: is_comfortable_underperformer
+		summarizeBy: none
+
+	column 'is_critical_tenure_window'
+		dataType: int64
+		sourceColumn: is_critical_tenure_window
+		summarizeBy: none
+
+	column 'stagnation_flag'
+		dataType: int64
+		sourceColumn: stagnation_flag
+		summarizeBy: none
+
+	column 'risk_score_raw'
+		dataType: double
+		sourceColumn: risk_score_raw
+		summarizeBy: none
+
+	column 'low_exit_barrier_flag'
+		dataType: int64
+		sourceColumn: low_exit_barrier_flag
+		summarizeBy: none
+
+	column 'satisfaction_x_evaluation'
+		dataType: double
+		sourceColumn: satisfaction_x_evaluation
+		summarizeBy: none
+
+	column 'is_project_extreme'
+		dataType: int64
+		sourceColumn: is_project_extreme
+		summarizeBy: none
+
+	column 'is_hours_ceiling'
+		dataType: int64
+		sourceColumn: is_hours_ceiling
+		summarizeBy: none
+
+	column 'churn_probability'
+		dataType: double
+		sourceColumn: churn_probability
+		summarizeBy: none
+		formatString: 0.0%
+
+	column 'risk_band'
+		dataType: string
+		sourceColumn: risk_band
+		summarizeBy: none
+
+	column 'is_flight_risk'
+		dataType: int64
+		sourceColumn: is_flight_risk
+		summarizeBy: none
+
+	column 'is_high_performer'
+		dataType: int64
+		sourceColumn: is_high_performer
+		summarizeBy: none
+
+	column 'risk_quadrant'
+		dataType: string
+		sourceColumn: risk_quadrant
+		summarizeBy: none
+
+	column 'behavior_cluster'
+		dataType: string
+		sourceColumn: behavior_cluster
+		summarizeBy: none
+
+	column 'shap_main_driver_feature'
+		dataType: string
+		sourceColumn: shap_main_driver_feature
+		summarizeBy: none
+
+	column 'shap_main_driver_value'
+		dataType: double
+		sourceColumn: shap_main_driver_value
+		summarizeBy: none
+
+	column 'shap_driver_direction'
+		dataType: string
+		sourceColumn: shap_driver_direction
+		summarizeBy: none
+
+	column 'simulated_monthly_salary_eur'
+		dataType: double
+		sourceColumn: simulated_monthly_salary_eur
+		summarizeBy: none
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+
+	column 'simulated_annual_salary_eur'
+		dataType: double
+		sourceColumn: simulated_annual_salary_eur
+		summarizeBy: none
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+
+	column 'simulated_replacement_cost_pct'
+		dataType: double
+		sourceColumn: simulated_replacement_cost_pct
+		summarizeBy: none
+
+	column 'simulated_replacement_cost_eur'
+		dataType: double
+		sourceColumn: simulated_replacement_cost_eur
+		summarizeBy: none
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+
+	column 'simulated_retention_action_cost_eur'
+		dataType: double
+		sourceColumn: simulated_retention_action_cost_eur
+		summarizeBy: none
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+
+	partition fEmployeeTurnover = m
+		mode: import
+		source =
+			let
+			    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_en\fEmployeeTurnover.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Typed = Table.TransformColumnTypes(Promoted, {{"employee_id", Int64.Type}, {"department_key", Int64.Type}, {"salary_key", Int64.Type}, {"tenure_bucket_key", Int64.Type}, {"performance_cluster_key", Int64.Type}, {"exit_archetype_key", Int64.Type}, {"satisfaction_level", type number}, {"last_evaluation", type number}, {"number_project", Int64.Type}, {"average_montly_hours", Int64.Type}, {"time_spend_company", Int64.Type}, {"Work_accident", Int64.Type}, {"left", Int64.Type}, {"promotion_last_5years", Int64.Type}, {"workload_intensity_idx", type number}, {"is_overworked", Int64.Type}, {"is_underutilized", Int64.Type}, {"hours_per_project", type number}, {"eval_satisfaction_gap", type number}, {"is_unhappy_star", Int64.Type}, {"is_comfortable_underperformer", Int64.Type}, {"is_critical_tenure_window", Int64.Type}, {"stagnation_flag", Int64.Type}, {"risk_score_raw", type number}, {"low_exit_barrier_flag", Int64.Type}, {"satisfaction_x_evaluation", type number}, {"is_project_extreme", Int64.Type}, {"is_hours_ceiling", Int64.Type}, {"churn_probability", type number}, {"risk_band", type text}, {"is_flight_risk", Int64.Type}, {"is_high_performer", Int64.Type}, {"risk_quadrant", type text}, {"behavior_cluster", type text}, {"shap_main_driver_feature", type text}, {"shap_main_driver_value", type number}, {"shap_driver_direction", type text}, {"simulated_monthly_salary_eur", type number}, {"simulated_annual_salary_eur", type number}, {"simulated_replacement_cost_pct", type number}, {"simulated_replacement_cost_eur", type number}, {"simulated_retention_action_cost_eur", type number}}, "en-US")
+			in
+			    Typed

@@ -1,0 +1,371 @@
+<title>VELA Brand Identity</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    /* Brand constants — do not change per theme */
+    --ink:      #0F2A3D;
+    --harbour:  #2A6FB8;
+    --signal:   #E8833A;
+    --teal:     #1B9E8F;
+    --crimson:  #C43A5E;
+    --violet:   #7B5EA7;
+    --brass:    #B8912E;
+    /* Surfaces & text — theme-dependent */
+    --paper:    #FBFBF9;
+    --mist:     #F2F4F6;
+    --card:     #FFFFFF;
+    --text:     #0F2A3D;
+    --text-2:   #5A6B7A;
+    --text-3:   #8A99A6;
+    --rule:     #E4E8EC;
+    --rule-2:   #EDEFF1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper:  #0C1720;
+      --mist:   #12212E;
+      --card:   #142534;
+      --text:   #EEF3F7;
+      --text-2: #9DB0C0;
+      --text-3: #6E8397;
+      --rule:   #223447;
+      --rule-2: #1B2E3F;
+      --harbour:#4A90E2;
+      --signal: #C4801C;
+      --teal:   #149C8B;
+      --crimson:#CE4A66;
+      --violet: #9585D6;
+      --brass:  #A88A2C;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:  #0C1720;
+    --mist:   #12212E;
+    --card:   #142534;
+    --text:   #EEF3F7;
+    --text-2: #9DB0C0;
+    --text-3: #6E8397;
+    --rule:   #223447;
+    --rule-2: #1B2E3F;
+    --harbour:#4A90E2;
+    --signal: #C4801C;
+    --teal:   #149C8B;
+    --crimson:#CE4A66;
+    --violet: #9585D6;
+    --brass:  #A88A2C;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); }
+  .doc {
+    font-family: Archivo, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--paper);
+    padding: 64px 32px 120px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--text-3); margin: 0 0 10px;
+  }
+  h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 700; letter-spacing: -.02em; margin: 0 0 12px; text-wrap: balance; }
+  h2 { font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 6px; text-wrap: balance; }
+  h3 { font-size: 14px; font-weight: 600; margin: 0 0 4px; }
+  p  { margin: 0 0 12px; color: var(--text-2); font-size: 14.5px; max-width: 68ch; }
+  p strong { color: var(--text); font-weight: 600; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  section { padding: 52px 0; border-top: 1px solid var(--rule); }
+  section:first-of-type { border-top: none; padding-top: 0; }
+
+  /* ---------- Masthead ---------- */
+  .masthead { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between; margin-bottom: 8px; }
+  .lockup { display: flex; align-items: center; gap: 18px; }
+  .wordmark { font-size: 52px; font-weight: 700; letter-spacing: .10em; color: var(--text); line-height: 1; }
+  .descriptor {
+    border-left: 1px solid var(--rule); padding-left: 18px; margin-left: 4px;
+    font-size: 12.5px; line-height: 1.35; color: var(--text-2); max-width: 130px;
+  }
+  .tagline { font-size: 17px; color: var(--text-2); max-width: 46ch; margin-top: 22px; }
+  .tagline b { color: var(--text); font-weight: 600; }
+
+  /* ---------- Grids ---------- */
+  .grid   { display: grid; gap: 18px; }
+  .g2 { grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); }
+  .g3 { grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); }
+  .g4 { grid-template-columns: repeat(auto-fit, minmax(178px,1fr)); }
+
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 20px;
+  }
+  .card p { font-size: 13.5px; margin-bottom: 0; }
+
+  /* ---------- Swatches ---------- */
+  .sw { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--card); }
+  .sw .chip { height: 92px; }
+  .sw .meta { padding: 12px 14px 14px; }
+  .sw .name { font-size: 13.5px; font-weight: 600; }
+  .sw .hex  { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; color: var(--text-3); margin-top: 2px; }
+  .sw .use  { font-size: 12px; color: var(--text-2); margin-top: 7px; line-height: 1.4; }
+
+  /* ---------- Risk scale ---------- */
+  .scale { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; border-radius: 8px; overflow: hidden; }
+  .scale div { padding: 14px 12px; color: #fff; font-size: 12.5px; font-weight: 600; }
+  .scale .lab { display: block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 400; font-size: 10.5px; opacity: .85; margin-top: 3px; }
+
+  /* ---------- Type specimen ---------- */
+  .spec { border-bottom: 1px solid var(--rule-2); padding: 14px 0; display: flex; gap: 20px; align-items: baseline; flex-wrap: wrap; }
+  .spec .tag { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; color: var(--text-3); min-width: 128px; letter-spacing: .06em; }
+
+  /* ---------- Dashboard mock ---------- */
+  .mock { background: var(--mist); border: 1px solid var(--rule); border-radius: 12px; padding: 16px; }
+  .mock-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .mock-bar .wm { font-weight: 700; letter-spacing: .10em; font-size: 13px; color: var(--text); }
+  .mock-bar .ttl { font-size: 11.5px; color: var(--text-3); border-left: 1px solid var(--rule); padding-left: 10px; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 10px; margin-bottom: 12px; }
+  .kpi { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .kpi .k { font-size: 10.5px; color: var(--text-3); font-family: "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .04em; }
+  .kpi .v { font-size: 25px; font-weight: 400; margin-top: 5px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .kpi .d { font-size: 11.5px; color: var(--text-2); margin-top: 2px; }
+  .panel { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 14px; }
+  .panel h4 { font-size: 12px; font-weight: 600; margin: 0 0 12px; color: var(--text); }
+  .brow { display: grid; grid-template-columns: 92px 1fr 62px; align-items: center; gap: 10px; margin-bottom: 7px; font-size: 11.5px; }
+  .brow .nm { color: var(--text-2); }
+  .brow .tr { background: var(--rule-2); border-radius: 3px; height: 15px; overflow: hidden; }
+  .brow .fl { height: 100%; border-radius: 3px; }
+  .brow .vl { text-align: right; color: var(--text-2); font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule-2); }
+  th { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); font-weight: 400; }
+  td { color: var(--text-2); }
+  td.num { font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; }
+  .tbl-wrap { overflow-x: auto; }
+
+  .pill { display: inline-block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--rule); color: var(--text-2); }
+  .ok { color: var(--teal); border-color: var(--teal); }
+
+  ul.tight { margin: 0 0 12px; padding-left: 18px; color: var(--text-2); font-size: 14px; }
+  ul.tight li { margin-bottom: 6px; }
+  ul.tight b { color: var(--text); font-weight: 600; }
+</style>
+
+<div class="doc">
+<div class="wrap">
+
+  <!-- ============ MASTHEAD ============ -->
+  <section>
+    <p class="eyebrow">Identidade de marca · Projeto de portfólio</p>
+    <div class="masthead">
+      <div>
+        <div class="lockup">
+          <svg width="66" height="66" viewBox="0 0 64 64" role="img" aria-label="Marca VELA: vela triangular sobre o mastro">
+            <rect x="12" y="6" width="2.6" height="52" rx="1.3" fill="var(--ink)" style="fill: var(--text)"/>
+            <path d="M17.5 8 L47 47 L17.5 47 Z" fill="var(--harbour)"/>
+            <path d="M10.2 47 L10.2 20 L2.5 47 Z" fill="var(--signal)"/>
+          </svg>
+          <div class="wordmark">VELA</div>
+          <div class="descriptor">People<br>Analytics</div>
+        </div>
+        <p class="tagline">Inteligência de retenção que enxerga a saída <b>antes da entrevista de desligamento</b>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NAMING ============ -->
+  <section>
+    <p class="eyebrow">O nome</p>
+    <h2>Por que VELA — e por que o nome sozinho não é o que atrai</h2>
+    <p>A pergunta certa não é se “VELA” chama atenção sozinha. Nenhum nome chama. <strong>Workday, Personio, Deel e Sympa também não dizem nada isoladamente</strong> — quem faz o trabalho de atrair é o descritor que vem colado nele. Por isso a marca nunca aparece sozinha: aparece sempre como <span class="mono">VELA · People Analytics</span>, com a linha de posicionamento logo abaixo.</p>
+    <div class="grid g3" style="margin-top: 20px;">
+      <div class="card">
+        <h3>Funciona nos dois idiomas</h3>
+        <p>“Vela” é palavra real em português e lê-se igual em inglês. Como o projeto tem uma versão EN e uma PT, um nome que não precisa de adaptação evita duas marcas diferentes.</p>
+      </div>
+      <div class="card">
+        <h3>Significado ligado ao produto</h3>
+        <p>Vela e navegação: o dashboard dá direção, não só diagnóstico. Vela é também uma constelação usada há séculos para navegar — leitura discreta, não literal.</p>
+      </div>
+      <div class="card">
+        <h3>Sem colisão em HR-tech</h3>
+        <p>Kestrel e Tenura foram descartados por conflito de marca no setor. VELA está livre nesse nicho e tem o formato curto que o mercado europeu de RH usa.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top: 18px; border-left: 3px solid var(--signal);">
+      <h3>Por que “People Analytics” e não “Consultoria de RH”</h3>
+      <p style="margin-top:6px">Essa é a decisão que mais afeta o resultado. <strong>“People Analytics” é o termo que o recrutador irlandês efetivamente busca</strong> — é o nome da disciplina e da família de cargos no LinkedIn. “Consultoria” posiciona como serviço, que no mercado tech de Dublin lê como valor mais baixo; “People Analytics” posiciona como produto de dados, que é exatamente o que o projeto demonstra: pipeline em Python, modelo preditivo e dashboard. O descritor carrega a palavra-chave; o nome só precisa ser memorável.</p>
+    </div>
+  </section>
+
+  <!-- ============ MARK ============ -->
+  <section>
+    <p class="eyebrow">A marca</p>
+    <h2>Construção e aplicação</h2>
+    <p>Uma vela mestra e uma bujarrona sobre o mastro. A geometria é a mesma em qualquer tamanho: mastro em <span class="mono">2,6u</span>, vela mestra sobre a diagonal, bujarrona em âmbar como ponto de sinal — o único elemento que quebra a monocromia.</p>
+    <div class="grid g4" style="margin-top: 22px; align-items: center;">
+      <div class="card" style="text-align:center">
+        <svg width="88" height="88" viewBox="0 0 64 64" aria-label="Marca em tamanho grande">
+          <g opacity=".16" stroke="var(--harbour)" stroke-width=".5">
+            <line x1="0" y1="47" x2="64" y2="47"/><line x1="13.3" y1="0" x2="13.3" y2="64"/>
+            <line x1="17.5" y1="0" x2="17.5" y2="64"/><line x1="0" y1="8" x2="64" y2="8"/>
+          </g>
+          <rect x="12" y="6" width="2.6" height="52" rx="1.3" style="fill: var(--text)"/>
+          <path d="M17.5 8 L47 47 L17.5 47 Z" fill="var(--harbour)"/>
+          <path d="M10.2 47 L10.2 20 L2.5 47 Z" fill="var(--signal)"/>
+        </svg>
+        <div class="mono" style="font-size:10.5px;color:var(--text-3);margin-top:8px">grade de construção</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <svg width="52" height="52" viewBox="0 0 64 64" aria-label="Marca 52px">
+          <rect x="12" y="6" width="2.6" height="52" rx="1.3" style="fill: var(--text)"/>
+          <path d="M17.5 8 L47 47 L17.5 47 Z" fill="var(--harbour)"/>
+          <path d="M10.2 47 L10.2 20 L2.5 47 Z" fill="var(--signal)"/>
+        </svg>
+        <div class="mono" style="font-size:10.5px;color:var(--text-3);margin-top:8px">52 px</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <svg width="24" height="24" viewBox="0 0 64 64" aria-label="Marca 24px">
+          <rect x="12" y="6" width="2.6" height="52" rx="1.3" style="fill: var(--text)"/>
+          <path d="M17.5 8 L47 47 L17.5 47 Z" fill="var(--harbour)"/>
+          <path d="M10.2 47 L10.2 20 L2.5 47 Z" fill="var(--signal)"/>
+        </svg>
+        <div class="mono" style="font-size:10.5px;color:var(--text-3);margin-top:8px">24 px · favicon</div>
+      </div>
+      <div class="card" style="text-align:center; background: var(--ink);">
+        <svg width="52" height="52" viewBox="0 0 64 64" aria-label="Marca sobre fundo escuro">
+          <rect x="12" y="6" width="2.6" height="52" rx="1.3" fill="#FBFBF9"/>
+          <path d="M17.5 8 L47 47 L17.5 47 Z" fill="#4A90E2"/>
+          <path d="M10.2 47 L10.2 20 L2.5 47 Z" fill="#E8833A"/>
+        </svg>
+        <div class="mono" style="font-size:10.5px;color:#8A99A6;margin-top:8px">fundo escuro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PALETTE ============ -->
+  <section>
+    <p class="eyebrow">Cor</p>
+    <h2>Paleta — validada, não escolhida no olho</h2>
+    <p>Cada cor foi testada por script contra faixa de luminosidade, piso de croma, separação para daltonismo (protanopia, deuteranopia, tritanopia) e contraste com a superfície, nos modos claro e escuro. <span class="pill ok">6 séries · todos os testes aprovados</span></p>
+    <div class="grid g3" style="margin-top: 22px;">
+      <div class="sw"><div class="chip" style="background:#0F2A3D"></div><div class="meta"><div class="name">Ink</div><div class="hex">#0F2A3D</div><div class="use">Marca primária, títulos, mastro da logo. O azul-marinho profundo é a cor institucional.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#2A6FB8"></div><div class="meta"><div class="name">Harbour</div><div class="hex">#2A6FB8 · escuro #4A90E2</div><div class="use">Série primária de dados e vela mestra. É o azul que carrega os gráficos.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#E8833A"></div><div class="meta"><div class="name">Signal</div><div class="hex">#E8833A · escuro #C4801C</div><div class="use">Acento único da marca. Segunda série de dados e destaque de atenção.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#1B9E8F"></div><div class="meta"><div class="name">Teal</div><div class="hex">#1B9E8F · escuro #149C8B</div><div class="use">Terceira série e semântica positiva — risco baixo, retenção saudável.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#C43A5E"></div><div class="meta"><div class="name">Crimson</div><div class="hex">#C43A5E · escuro #CE4A66</div><div class="use">Severidade crítica. Reservada — nunca usada como “série 5” decorativa.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F2F4F6; border-bottom:1px solid var(--rule)"></div><div class="meta"><div class="name">Paper / Mist</div><div class="hex">#FBFBF9 · #F2F4F6</div><div class="use">Neutros com leve viés azul em direção ao Ink — não cinza puro.</div></div></div>
+    </div>
+
+    <div style="margin-top: 26px;">
+      <h3 style="margin-bottom:10px">Escala semântica de risco</h3>
+      <div class="scale">
+        <div style="background:#1B9E8F">Baixo<span class="lab">0–25%</span></div>
+        <div style="background:#2A6FB8">Moderado<span class="lab">25–50%</span></div>
+        <div style="background:#E8833A">Alto<span class="lab">50–75%</span></div>
+        <div style="background:#C43A5E">Crítico<span class="lab">75–100%</span></div>
+      </div>
+      <p style="margin-top:10px; font-size:13px">Quatro matizes distintos em vez de um degradê verde-vermelho: a separação sobrevive a daltonismo, que um degradê não faz. A escala é sempre acompanhada do rótulo — a cor nunca carrega o significado sozinha.</p>
+    </div>
+  </section>
+
+  <!-- ============ TYPE ============ -->
+  <section>
+    <p class="eyebrow">Tipografia</p>
+    <h2>Archivo e IBM Plex Mono</h2>
+    <p><strong>Archivo</strong> para tudo que se lê: uma grotesca com presença, sem a neutralidade genérica das fontes de interface padrão. <strong>IBM Plex Mono</strong> para números, códigos hexadecimais, rótulos técnicos e eixos — dá autoridade de produto de dados e alinha dígitos em coluna.</p>
+    <div style="margin-top: 20px;">
+      <div class="spec"><span class="tag">Archivo 700 · 46px</span><span style="font-size:38px;font-weight:700;letter-spacing:-.02em">Retenção previsível</span></div>
+      <div class="spec"><span class="tag">Archivo 600 · 21px</span><span style="font-size:21px;font-weight:600">Diagnóstico estratégico</span></div>
+      <div class="spec"><span class="tag">Archivo 400 · 14,5px</span><span style="font-size:14.5px;color:var(--text-2)">Corpo de texto para leitura corrida em relatórios e documentação.</span></div>
+      <div class="spec"><span class="tag">Plex Mono 400 · 11px</span><span class="mono" style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)">Rótulo de seção</span></div>
+      <div class="spec"><span class="tag">Plex Mono · dados</span><span class="mono" style="font-size:14px;font-variant-numeric:tabular-nums">€144.400.000 · 3.539 · 1,52x · 23,6%</span></div>
+    </div>
+    <p style="margin-top:14px; font-size:13px">No Power BI, onde fontes externas não são garantidas, o tema usa <span class="mono">Segoe UI</span> — nativa do Windows e visualmente próxima da Archivo em peso e largura.</p>
+  </section>
+
+  <!-- ============ APPLICATION ============ -->
+  <section>
+    <p class="eyebrow">Aplicação</p>
+    <h2>Aba 1 do dashboard, com a identidade aplicada</h2>
+    <p>Números reais do modelo — versão em euros, mercado irlandês. É assim que a marca chega ao Power BI através do arquivo de tema.</p>
+    <div class="mock" style="margin-top: 20px;">
+      <div class="mock-bar">
+        <svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="12" y="6" width="2.6" height="52" rx="1.3" style="fill: var(--text)"/>
+          <path d="M17.5 8 L47 47 L17.5 47 Z" fill="var(--harbour)"/>
+          <path d="M10.2 47 L10.2 20 L2.5 47 Z" fill="var(--signal)"/>
+        </svg>
+        <span class="wm">VELA</span>
+        <span class="ttl">Retention Intelligence · Strategic Diagnosis</span>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="k">ACTUAL TURNOVER</div><div class="v">23,8%</div><div class="d">3.571 saídas</div></div>
+        <div class="kpi"><div class="k">PREDICTED AT RISK</div><div class="v" style="color:var(--signal)">3.539</div><div class="d">23,6% da base</div></div>
+        <div class="kpi"><div class="k">PROJECTED LOSS</div><div class="v">€144,4M</div><div class="d">€40.806 por saída</div></div>
+        <div class="kpi"><div class="k">RETENTION ROI</div><div class="v" style="color:var(--teal)">1,52x</div><div class="d">€49,2M economia</div></div>
+      </div>
+      <div class="grid g2">
+        <div class="panel">
+          <h4>Custo de reposição por departamento</h4>
+          <div class="brow"><span class="nm">Technical</span><span class="tr"><span class="fl" style="width:100%;background:var(--harbour)"></span></span><span class="vl">€34,3M</span></div>
+          <div class="brow"><span class="nm">Sales</span><span class="tr"><span class="fl" style="width:96%;background:var(--harbour)"></span></span><span class="vl">€32,8M</span></div>
+          <div class="brow"><span class="nm">IT</span><span class="tr"><span class="fl" style="width:43%;background:var(--harbour)"></span></span><span class="vl">€14,7M</span></div>
+          <div class="brow"><span class="nm">Support</span><span class="tr"><span class="fl" style="width:43%;background:var(--harbour)"></span></span><span class="vl">€14,7M</span></div>
+          <div class="brow"><span class="nm">Product Mng</span><span class="tr"><span class="fl" style="width:31%;background:var(--harbour)"></span></span><span class="vl">€10,6M</span></div>
+          <div class="brow" style="margin-bottom:0"><span class="nm">Management</span><span class="tr"><span class="fl" style="width:18%;background:var(--harbour)"></span></span><span class="vl">€6,3M</span></div>
+        </div>
+        <div class="panel">
+          <h4>Base por faixa de risco</h4>
+          <div class="brow"><span class="nm">Baixo</span><span class="tr"><span class="fl" style="width:100%;background:var(--teal)"></span></span><span class="vl">11.201</span></div>
+          <div class="brow"><span class="nm">Moderado</span><span class="tr"><span class="fl" style="width:2.3%;background:var(--harbour)"></span></span><span class="vl">259</span></div>
+          <div class="brow"><span class="nm">Alto</span><span class="tr"><span class="fl" style="width:1.2%;background:var(--signal)"></span></span><span class="vl">135</span></div>
+          <div class="brow"><span class="nm">Crítico</span><span class="tr"><span class="fl" style="width:30.4%;background:var(--crimson)"></span></span><span class="vl">3.404</span></div>
+          <div style="border-top:1px solid var(--rule-2); margin-top:12px; padding-top:11px; font-size:12px; color:var(--text-2)">
+            <b style="color:var(--crimson)">1.890</b> em Risco Crítico com Alto Desempenho — a fila de intervenção prioritária.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IRELAND ============ -->
+  <section>
+    <p class="eyebrow">Decisões de mercado</p>
+    <h2>Por que esta identidade funciona para o recrutador irlandês</h2>
+    <p>Nada aqui é temático da Irlanda — sem verde, sem trevo, sem referência celta. As escolhas respondem ao que o mercado de Dublin valoriza, apurado em fontes de recrutamento de 2026.</p>
+    <div class="tbl-wrap" style="margin-top: 18px;">
+      <table>
+        <thead><tr><th>Sinal do mercado</th><th>Como a identidade responde</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Portfólio pesa mais que diploma</strong> — processos com múltiplas rodadas práticas</td><td>Marca própria e tema aplicado fazem o projeto parecer produto entregue, não exercício de curso</td></tr>
+          <tr><td><strong>SQL + Python + Power BI</strong> é o stack que empregadores pedem</td><td>O projeto entrega os três; o descritor “People Analytics” os ancora numa disciplina reconhecível</td></tr>
+          <tr><td><strong>Governança e conformidade</strong> viraram pauta de board (NIS2, DORA, GDPR)</td><td>Auditoria documentada, ressalvas explícitas e rótulo de dado simulado sinalizam maturidade de governança</td></tr>
+          <tr><td><strong>“Job hugging”</strong> — 64% dos profissionais permanecem no emprego, apertando a oferta de talento</td><td>Retenção é justamente o tema mais quente do RH irlandês agora; o posicionamento cai no timing certo</td></tr>
+          <tr><td><strong>Salários em euro</strong>, faixas de €35k a €160k</td><td>Versão EN usa EUR com benchmarks irlandeses; versão PT mantém BRL para o mercado brasileiro</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px">A linguagem visual é a do B2B europeu de dados: azul-marinho profundo, um único acento quente, régua tipográfica precisa e muito espaço em branco. É o registro de Personio, Workday e Stripe — o que um recrutador de Dublin reconhece como software sério, e não como material de agência.</p>
+  </section>
+
+  <!-- ============ FILES ============ -->
+  <section>
+    <p class="eyebrow">Entregáveis</p>
+    <h2>O que vai para o Power BI</h2>
+    <ul class="tight">
+      <li><b>brand/VELA_Theme_EN.json</b> — tema do Power BI para o modelo em inglês. Importar em <span class="mono">Exibição → Temas → Procurar temas</span>.</li>
+      <li><b>brand/VELA_Theme_PT.json</b> — mesmo tema para o modelo em português.</li>
+      <li><b>brand/vela_logo.svg</b> — marca em vetor, para o cabeçalho das três abas.</li>
+      <li><b>brand/vela_identity.html</b> — este documento, a referência da identidade.</li>
+    </ul>
+    <p>O tema define as 8 cores de série, tipografia, fundo de cartão, bordas arredondadas de 8px, eixos discretos e legenda superior esquerda — de modo que qualquer visual novo já nasce dentro da identidade, sem formatação manual.</p>
+  </section>
+
+</div>
+</div>

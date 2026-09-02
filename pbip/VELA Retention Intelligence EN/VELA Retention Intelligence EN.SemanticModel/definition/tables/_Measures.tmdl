@@ -1,0 +1,140 @@
+table _Measures
+
+	column _dummy
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	measure 'Total Employees' =
+			COUNTROWS ( fEmployeeTurnover )
+		formatString: #,0
+		displayFolder: 01. Rates
+
+	measure 'Total Exits (Actual)' =
+			CALCULATE ( COUNTROWS ( fEmployeeTurnover ), fEmployeeTurnover[left] = 1 )
+		formatString: #,0
+		displayFolder: 01. Rates
+
+	measure 'Actual Turnover Rate' =
+			DIVIDE ( [Total Exits (Actual)], [Total Employees], 0 )
+		formatString: 0.0%
+		displayFolder: 01. Rates
+
+	measure 'Employees at Risk (Predicted)' =
+			CALCULATE ( COUNTROWS ( fEmployeeTurnover ), fEmployeeTurnover[is_flight_risk] = 1 )
+		formatString: #,0
+		displayFolder: 01. Rates
+
+	measure 'Predicted Risk Rate' =
+			DIVIDE ( [Employees at Risk (Predicted)], [Total Employees], 0 )
+		formatString: 0.0%
+		displayFolder: 01. Rates
+
+	measure 'Average Churn Probability' =
+			AVERAGE ( fEmployeeTurnover[churn_probability] )
+		formatString: 0.0%
+		displayFolder: 01. Rates
+
+	measure 'Actual vs Predicted Gap' =
+			[Predicted Risk Rate] - [Actual Turnover Rate]
+		formatString: 0.0%
+		displayFolder: 01. Rates
+
+	measure 'Replacement Cost Adjustment Factor' =
+			SELECTEDVALUE ( 'Cost Adjustment'[Cost Adjustment], 1 )
+		formatString: 0.00
+		displayFolder: 02. Financial
+
+	measure 'Retention Success Rate' =
+			SELECTEDVALUE ( 'Retention Success'[Retention Success], 0.35 )
+		formatString: 0%
+		displayFolder: 02. Financial
+
+	measure 'Estimated Loss (Actual)' =
+			SUMX ( FILTER ( fEmployeeTurnover, fEmployeeTurnover[left] = 1 ), fEmployeeTurnover[simulated_replacement_cost_eur] ) * [Replacement Cost Adjustment Factor]
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+		displayFolder: 02. Financial
+
+	measure 'Estimated Loss (Projected)' =
+			SUMX ( FILTER ( fEmployeeTurnover, fEmployeeTurnover[is_flight_risk] = 1 ), fEmployeeTurnover[simulated_replacement_cost_eur] ) * [Replacement Cost Adjustment Factor]
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+		displayFolder: 02. Financial
+
+	measure 'Required Retention Investment' =
+			SUMX ( FILTER ( fEmployeeTurnover, fEmployeeTurnover[is_flight_risk] = 1 ), fEmployeeTurnover[simulated_retention_action_cost_eur] )
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+		displayFolder: 02. Financial
+
+	measure 'Average Replacement Cost per At-Risk Employee' =
+			DIVIDE ( [Estimated Loss (Projected)], [Employees at Risk (Predicted)], 0 )
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+		displayFolder: 02. Financial
+
+	measure 'Expected Avoided Exits' =
+			SUMX ( FILTER ( fEmployeeTurnover, fEmployeeTurnover[is_flight_risk] = 1 ), fEmployeeTurnover[churn_probability] ) * [Retention Success Rate]
+		formatString: #,0
+		displayFolder: 02. Financial
+
+	measure 'Expected Retention Saving' =
+			SUMX ( FILTER ( fEmployeeTurnover, fEmployeeTurnover[is_flight_risk] = 1 ), fEmployeeTurnover[simulated_replacement_cost_eur] * fEmployeeTurnover[churn_probability] ) * [Retention Success Rate] * [Replacement Cost Adjustment Factor]
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+		displayFolder: 02. Financial
+
+	measure 'Potential Retention ROI' =
+			DIVIDE ( [Expected Retention Saving] - [Required Retention Investment], [Required Retention Investment], 0 )
+		formatString: 0.00"x"
+		displayFolder: 02. Financial
+
+	measure 'Critical Risk High Performer (Count)' =
+			CALCULATE ( COUNTROWS ( fEmployeeTurnover ), fEmployeeTurnover[risk_quadrant] = "Q1 - Critical Risk / High Performer" )
+		formatString: #,0
+		displayFolder: 03. Critical Risk
+
+	measure 'Critical Risk High Performer (%)' =
+			DIVIDE ( [Critical Risk High Performer (Count)], [Total Employees], 0 )
+		formatString: 0.0%
+		displayFolder: 03. Critical Risk
+
+	measure 'High Performer Loss Cost at Risk' =
+			SUMX ( FILTER ( fEmployeeTurnover, fEmployeeTurnover[risk_quadrant] = "Q1 - Critical Risk / High Performer" ), fEmployeeTurnover[simulated_replacement_cost_eur] ) * [Replacement Cost Adjustment Factor]
+		formatString: "€"#,0;-"€"#,0;"€"#,0
+		displayFolder: 03. Critical Risk
+
+	measure 'Average Satisfaction' =
+			AVERAGE ( fEmployeeTurnover[satisfaction_level] )
+		formatString: 0.0%
+		displayFolder: 04. Segmentation
+
+	measure 'Average Evaluation' =
+			AVERAGE ( fEmployeeTurnover[last_evaluation] )
+		formatString: 0.0%
+		displayFolder: 04. Segmentation
+
+	measure 'Average Monthly Hours' =
+			AVERAGE ( fEmployeeTurnover[average_montly_hours] )
+		formatString: #,0
+		displayFolder: 04. Segmentation
+
+	measure 'Department Turnover Rank' =
+			RANKX ( ALL ( dDepartment[department_name] ), CALCULATE ( [Actual Turnover Rate] ),, DESC )
+		formatString: 0
+		displayFolder: 04. Segmentation
+
+	measure 'Employees in Extreme Project Zone' =
+			CALCULATE ( COUNTROWS ( fEmployeeTurnover ), fEmployeeTurnover[is_project_extreme] = 1 )
+		formatString: #,0
+		displayFolder: 04. Segmentation
+
+	measure 'Most Frequent Main Driver' =
+			VAR T = TOPN ( 1, VALUES ( fEmployeeTurnover[shap_main_driver_feature] ), CALCULATE ( COUNTROWS ( fEmployeeTurnover ) ), DESC )
+			RETURN CONCATENATEX ( T, fEmployeeTurnover[shap_main_driver_feature], ", " )
+		displayFolder: 05. Explainability
+
+	measure 'Model Accuracy (Info)' =
+			"ROC-AUC 0.994 | PR-AUC 0.989 (XGBoost, 25% holdout) — out-of-fold scoring (5 folds)"
+		displayFolder: 05. Explainability
+
+	partition _Measures = calculated
+		mode: import
+		source = {BLANK()}

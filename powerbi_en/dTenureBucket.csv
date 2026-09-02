@@ -1,0 +1,5 @@
+tenure_bucket_key,tenure_bucket_label
+1,0-2 yrs (new)
+2,3 yrs (transition)
+3,4-6 yrs (critical)
+4,7+ yrs (veteran)

@@ -1,0 +1,27 @@
+table dTempoDeCasa
+	lineageTag: 7a959527-be01-45e6-a447-371df16685c9
+
+	column chave_tempo_casa
+		dataType: int64
+		isHidden
+		lineageTag: a9b5f6c9-0817-4d4b-9e5a-860390bb1a47
+		summarizeBy: none
+		sourceColumn: chave_tempo_casa
+
+	column faixa_tempo_casa
+		dataType: string
+		lineageTag: cc9f38ef-6945-4f0e-9d3e-264aa8fe5b4d
+		summarizeBy: none
+		sourceColumn: faixa_tempo_casa
+		sortByColumn: chave_tempo_casa
+
+	partition dTempoDeCasa = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_pt\dTempoDeCasa.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"chave_tempo_casa", Int64.Type}, {"faixa_tempo_casa", type text}}, "en-US")
+				in
+				    Typed
+

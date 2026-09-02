@@ -1,0 +1,22 @@
+table dDepartment
+
+	column 'department_key'
+		dataType: int64
+		sourceColumn: department_key
+		summarizeBy: none
+		isHidden
+
+	column 'department_name'
+		dataType: string
+		sourceColumn: department_name
+		summarizeBy: none
+
+	partition dDepartment = m
+		mode: import
+		source =
+			let
+			    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_en\dDepartment.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Typed = Table.TransformColumnTypes(Promoted, {{"department_key", Int64.Type}, {"department_name", type text}}, "en-US")
+			in
+			    Typed

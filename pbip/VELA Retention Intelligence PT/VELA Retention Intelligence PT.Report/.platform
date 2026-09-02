@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "VELA Retention Intelligence PT"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d8f9e598-22a4-4889-bcde-04ed607e77a1"
+  }
+}

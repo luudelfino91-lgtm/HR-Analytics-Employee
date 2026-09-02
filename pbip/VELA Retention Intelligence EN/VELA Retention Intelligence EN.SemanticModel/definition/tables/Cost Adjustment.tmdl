@@ -1,0 +1,11 @@
+table 'Cost Adjustment'
+
+	column 'Cost Adjustment'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: [Value]
+		formatString: 0.00
+
+	partition 'Cost Adjustment' = calculated
+		mode: import
+		source = GENERATESERIES(0.5, 2, 0.1)

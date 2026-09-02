@@ -1,0 +1,22 @@
+table dExitArchetype
+
+	column 'exit_archetype_key'
+		dataType: int64
+		sourceColumn: exit_archetype_key
+		summarizeBy: none
+		isHidden
+
+	column 'archetype_name'
+		dataType: string
+		sourceColumn: archetype_name
+		summarizeBy: none
+
+	partition dExitArchetype = m
+		mode: import
+		source =
+			let
+			    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_en\dExitArchetype.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Typed = Table.TransformColumnTypes(Promoted, {{"exit_archetype_key", Int64.Type}, {"archetype_name", type text}}, "en-US")
+			in
+			    Typed

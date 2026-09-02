@@ -1,0 +1,23 @@
+table dTenureBucket
+
+	column 'tenure_bucket_key'
+		dataType: int64
+		sourceColumn: tenure_bucket_key
+		summarizeBy: none
+		isHidden
+
+	column 'tenure_bucket_label'
+		dataType: string
+		sourceColumn: tenure_bucket_label
+		summarizeBy: none
+		sortByColumn: tenure_bucket_key
+
+	partition dTenureBucket = m
+		mode: import
+		source =
+			let
+			    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_en\dTenureBucket.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Typed = Table.TransformColumnTypes(Promoted, {{"tenure_bucket_key", Int64.Type}, {"tenure_bucket_label", type text}}, "en-US")
+			in
+			    Typed

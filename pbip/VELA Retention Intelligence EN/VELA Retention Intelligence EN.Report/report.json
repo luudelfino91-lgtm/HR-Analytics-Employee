@@ -1,0 +1,725 @@
+{
+  "id": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "name": "RegisteredResources",
+        "type": 1,
+        "items": [
+          {
+            "name": "gauge.png",
+            "path": "gauge.png",
+            "type": 100
+          },
+          {
+            "name": "people.png",
+            "path": "people.png",
+            "type": 100
+          },
+          {
+            "name": "money.png",
+            "path": "money.png",
+            "type": 100
+          },
+          {
+            "name": "star.png",
+            "path": "star.png",
+            "type": 100
+          },
+          {
+            "name": "trend.png",
+            "path": "trend.png",
+            "type": 100
+          },
+          {
+            "name": "door.png",
+            "path": "door.png",
+            "type": 100
+          },
+          {
+            "name": "shield.png",
+            "path": "shield.png",
+            "type": 100
+          },
+          {
+            "name": "target.png",
+            "path": "target.png",
+            "type": 100
+          },
+          {
+            "name": "VELA People Analytics.json",
+            "path": "VELA People Analytics.json",
+            "type": 201
+          }
+        ]
+      }
+    }
+  ],
+  "theme": "VELA People Analytics.json",
+  "sections": [
+    {
+      "name": "ReportSection1",
+      "displayName": "Strategic Diagnosis",
+      "filters": "[]",
+      "ordinal": 0,
+      "visualContainers": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "width": 64,
+          "height": 720,
+          "config": "{\"name\": \"s0001\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0A1622'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"z\": 1, \"width\": 64, \"height\": 720}}]}"
+        },
+        {
+          "x": 0,
+          "y": 14,
+          "z": 2,
+          "width": 64,
+          "height": 34,
+          "config": "{\"name\": \"t0002\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"▲\", \"textStyle\": {\"fontSize\": \"13pt\", \"color\": \"#3E82CC\", \"fontFamily\": \"Segoe UI\"}}, {\"value\": \"▲\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#F2A25C\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 14, \"z\": 2, \"width\": 64, \"height\": 34}}]}"
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0003\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VELA\", \"textStyle\": {\"fontSize\": \"10pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 48, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 120,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0004\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"01\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#FFFFFF\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 120, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 20,
+          "y": 152,
+          "z": 2,
+          "width": 24,
+          "height": 3,
+          "config": "{\"name\": \"s0005\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2A25C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 152, \"z\": 2, \"width\": 24, \"height\": 3}}]}"
+        },
+        {
+          "x": 0,
+          "y": 176,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0006\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"02\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#7E93A3\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 176, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 232,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0007\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"03\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#7E93A3\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 232, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 88,
+          "y": 10,
+          "z": 1,
+          "width": 700,
+          "height": 42,
+          "config": "{\"name\": \"t0008\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Strategic Diagnosis\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontWeight\": \"bold\", \"color\": \"#F2F7FA\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 10, \"z\": 1, \"width\": 700, \"height\": 42}}]}"
+        },
+        {
+          "x": 88,
+          "y": 48,
+          "z": 1,
+          "width": 700,
+          "height": 32,
+          "config": "{\"name\": \"t0009\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Retention Intelligence · Strategic Diagnosis\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#9FB3C2\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 48, \"z\": 1, \"width\": 700, \"height\": 32}}]}"
+        },
+        {
+          "x": 1016,
+          "y": 24,
+          "z": 1,
+          "width": 240,
+          "height": 30,
+          "config": "{\"name\": \"t0010\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VELA · People Analytics\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"right\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1016, \"y\": 24, \"z\": 1, \"width\": 240, \"height\": 30}}]}"
+        },
+        {
+          "x": 88,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0011\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Actual Turnover Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}, \"Name\": \"_Measures.Actual Turnover Rate\", \"NativeReferenceName\": \"Actual Turnover Rate\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"26D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Actual Turnover Rate'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 88,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0012\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3E82CC'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 266,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0013\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"gauge.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 266, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 100,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0014\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"14,999 employees · snapshot\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 100, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 324,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0015\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Employees at Risk (Predicted)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Employees at Risk (Predicted)\"}, \"Name\": \"_Measures.Employees at Risk (Predicted)\", \"NativeReferenceName\": \"Employees at Risk (Predicted)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DE7024'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"26D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Employees at Risk'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 324, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 324,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0016\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DE7024'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 324, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 502,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0017\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"people.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 502, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 336,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0018\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"churn probability ≥ 50%\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 336, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 560,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0019\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Estimated Loss (Projected)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estimated Loss (Projected)\"}, \"Name\": \"_Measures.Estimated Loss (Projected)\", \"NativeReferenceName\": \"Estimated Loss (Projected)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"22D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Projected Loss'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 560,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0020\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DE7024'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 738,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0021\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"money.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 738, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 572,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0022\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"expected replacement cost\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 572, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 796,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0023\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Critical Risk High Performer (Count)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Critical Risk High Performer (Count)\"}, \"Name\": \"_Measures.Critical Risk High Performer (Count)\", \"NativeReferenceName\": \"Critical Risk High Performer (Count)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#D25275'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"26D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Critical Risk · High Performer'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 796, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 796,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0024\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#D25275'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 796, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 974,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0025\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"star.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 974, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 808,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0026\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"priority intervention queue\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 808, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 1032,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0027\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Potential Retention ROI\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Potential Retention ROI\"}, \"Name\": \"_Measures.Potential Retention ROI\", \"NativeReferenceName\": \"Potential Retention ROI\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B9E8F'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"26D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Retention ROI'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1032, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 1032,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0028\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B9E8F'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1032, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 1210,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0029\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"trend.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1210, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 1044,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0030\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"under what-if assumptions\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1044, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 88,
+          "y": 212,
+          "z": 0,
+          "width": 560,
+          "height": 244,
+          "config": "{\"name\": \"v0031\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dDepartment.department_name\"}], \"Y\": [{\"queryRef\": \"_Measures.Actual Turnover Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dDepartment\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"department_name\"}, \"Name\": \"dDepartment.department_name\", \"NativeReferenceName\": \"department_name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}, \"Name\": \"_Measures.Actual Turnover Rate\", \"NativeReferenceName\": \"Actual Turnover Rate\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3E82CC'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Turnover rate by department'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 212, \"z\": 0, \"width\": 560, \"height\": 244}}]}"
+        },
+        {
+          "x": 664,
+          "y": 212,
+          "z": 0,
+          "width": 592,
+          "height": 244,
+          "config": "{\"name\": \"v0032\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dDepartment.department_name\"}], \"Y\": [{\"queryRef\": \"_Measures.Estimated Loss (Projected)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dDepartment\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"department_name\"}, \"Name\": \"dDepartment.department_name\", \"NativeReferenceName\": \"department_name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estimated Loss (Projected)\"}, \"Name\": \"_Measures.Estimated Loss (Projected)\", \"NativeReferenceName\": \"Estimated Loss (Projected)\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estimated Loss (Projected)\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DE7024'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Projected replacement cost by department'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 664, \"y\": 212, \"z\": 0, \"width\": 592, \"height\": 244}}]}"
+        },
+        {
+          "x": 88,
+          "y": 472,
+          "z": 0,
+          "width": 356,
+          "height": 232,
+          "config": "{\"name\": \"v0033\", \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fEmployeeTurnover.risk_band\"}], \"Y\": [{\"queryRef\": \"_Measures.Total Employees\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"risk_band\"}, \"Name\": \"fEmployeeTurnover.risk_band\", \"NativeReferenceName\": \"risk_band\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}, \"Name\": \"_Measures.Total Employees\", \"NativeReferenceName\": \"Total Employees\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3E82CC'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Headcount by risk band'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 472, \"z\": 0, \"width\": 356, \"height\": 232}}]}"
+        },
+        {
+          "x": 460,
+          "y": 472,
+          "z": 0,
+          "width": 424,
+          "height": 232,
+          "config": "{\"name\": \"v0034\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fEmployeeTurnover.risk_quadrant\"}], \"Y\": [{\"queryRef\": \"_Measures.Total Employees\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"risk_quadrant\"}, \"Name\": \"fEmployeeTurnover.risk_quadrant\", \"NativeReferenceName\": \"risk_quadrant\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}, \"Name\": \"_Measures.Total Employees\", \"NativeReferenceName\": \"Total Employees\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#8E71BC'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Headcount by risk quadrant'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 460, \"y\": 472, \"z\": 0, \"width\": 424, \"height\": 232}}]}"
+        },
+        {
+          "x": 900,
+          "y": 472,
+          "z": 0,
+          "width": 172,
+          "height": 110,
+          "config": "{\"name\": \"v0035\", \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dDepartment.department_name\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dDepartment\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"department_name\"}, \"Name\": \"dDepartment.department_name\", \"NativeReferenceName\": \"department_name\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Department'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 900, \"y\": 472, \"z\": 0, \"width\": 172, \"height\": 110}}]}"
+        },
+        {
+          "x": 900,
+          "y": 598,
+          "z": 0,
+          "width": 172,
+          "height": 110,
+          "config": "{\"name\": \"v0036\", \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"dTenureBucket.tenure_bucket_label\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dTenureBucket\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"tenure_bucket_label\"}, \"Name\": \"dTenureBucket.tenure_bucket_label\", \"NativeReferenceName\": \"tenure_bucket_label\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tenure'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 900, \"y\": 598, \"z\": 0, \"width\": 172, \"height\": 110}}]}"
+        }
+      ],
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0D1B28'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "ReportSection2",
+      "displayName": "Behavioural Deep Dive",
+      "filters": "[]",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "width": 64,
+          "height": 720,
+          "config": "{\"name\": \"s0037\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0A1622'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"z\": 1, \"width\": 64, \"height\": 720}}]}"
+        },
+        {
+          "x": 0,
+          "y": 14,
+          "z": 2,
+          "width": 64,
+          "height": 34,
+          "config": "{\"name\": \"t0038\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"▲\", \"textStyle\": {\"fontSize\": \"13pt\", \"color\": \"#3E82CC\", \"fontFamily\": \"Segoe UI\"}}, {\"value\": \"▲\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#F2A25C\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 14, \"z\": 2, \"width\": 64, \"height\": 34}}]}"
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0039\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VELA\", \"textStyle\": {\"fontSize\": \"10pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 48, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 120,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0040\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"01\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#7E93A3\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 120, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 176,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0041\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"02\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#FFFFFF\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 176, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 20,
+          "y": 208,
+          "z": 2,
+          "width": 24,
+          "height": 3,
+          "config": "{\"name\": \"s0042\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2A25C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 208, \"z\": 2, \"width\": 24, \"height\": 3}}]}"
+        },
+        {
+          "x": 0,
+          "y": 232,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0043\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"03\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#7E93A3\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 232, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 88,
+          "y": 10,
+          "z": 1,
+          "width": 700,
+          "height": 42,
+          "config": "{\"name\": \"t0044\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Behavioural Deep Dive\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontWeight\": \"bold\", \"color\": \"#F2F7FA\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 10, \"z\": 1, \"width\": 700, \"height\": 42}}]}"
+        },
+        {
+          "x": 88,
+          "y": 48,
+          "z": 1,
+          "width": 700,
+          "height": 32,
+          "config": "{\"name\": \"t0045\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Retention Intelligence · Behavioural Deep Dive\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#9FB3C2\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 48, \"z\": 1, \"width\": 700, \"height\": 32}}]}"
+        },
+        {
+          "x": 1016,
+          "y": 24,
+          "z": 1,
+          "width": 240,
+          "height": 30,
+          "config": "{\"name\": \"t0046\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VELA · People Analytics\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"right\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1016, \"y\": 24, \"z\": 1, \"width\": 240, \"height\": 30}}]}"
+        },
+        {
+          "x": 88,
+          "y": 84,
+          "z": 0,
+          "width": 568,
+          "height": 248,
+          "config": "{\"name\": \"v0047\", \"singleVisual\": {\"visualType\": \"lineChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fEmployeeTurnover.time_spend_company\"}], \"Y\": [{\"queryRef\": \"_Measures.Actual Turnover Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"time_spend_company\"}, \"Name\": \"fEmployeeTurnover.time_spend_company\", \"NativeReferenceName\": \"time_spend_company\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}, \"Name\": \"_Measures.Actual Turnover Rate\", \"NativeReferenceName\": \"Actual Turnover Rate\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3E82CC'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Churn rate by years at company'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 84, \"z\": 0, \"width\": 568, \"height\": 248}}]}"
+        },
+        {
+          "x": 672,
+          "y": 84,
+          "z": 0,
+          "width": 580,
+          "height": 248,
+          "config": "{\"name\": \"v0048\", \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fEmployeeTurnover.number_project\"}], \"Y\": [{\"queryRef\": \"_Measures.Actual Turnover Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"number_project\"}, \"Name\": \"fEmployeeTurnover.number_project\", \"NativeReferenceName\": \"number_project\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}, \"Name\": \"_Measures.Actual Turnover Rate\", \"NativeReferenceName\": \"Actual Turnover Rate\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DE7024'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Churn rate by number of projects'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 672, \"y\": 84, \"z\": 0, \"width\": 580, \"height\": 248}}]}"
+        },
+        {
+          "x": 88,
+          "y": 348,
+          "z": 0,
+          "width": 568,
+          "height": 348,
+          "config": "{\"name\": \"v0049\", \"singleVisual\": {\"visualType\": \"scatterChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fEmployeeTurnover.employee_id\"}], \"X\": [{\"queryRef\": \"Average(fEmployeeTurnover.satisfaction_level)\"}], \"Y\": [{\"queryRef\": \"Average(fEmployeeTurnover.last_evaluation)\"}], \"Series\": [{\"queryRef\": \"dExitArchetype.archetype_name\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"d\", \"Entity\": \"dExitArchetype\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"employee_id\"}, \"Name\": \"fEmployeeTurnover.employee_id\", \"NativeReferenceName\": \"employee_id\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"satisfaction_level\"}}, \"Function\": 1}, \"Name\": \"Average(fEmployeeTurnover.satisfaction_level)\", \"NativeReferenceName\": \"satisfaction_level\"}, {\"Aggregation\": {\"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"last_evaluation\"}}, \"Function\": 1}, \"Name\": \"Average(fEmployeeTurnover.last_evaluation)\", \"NativeReferenceName\": \"last_evaluation\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"archetype_name\"}, \"Name\": \"dExitArchetype.archetype_name\", \"NativeReferenceName\": \"archetype_name\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"start\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"end\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"start\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"end\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Top'\"}}}, \"showTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"fillPoint\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Satisfaction × Evaluation (colour = left)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 348, \"z\": 0, \"width\": 568, \"height\": 348}}]}",
+          "filters": "[{\"expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"fEmployeeTurnover\"}}, \"Property\": \"left\"}}, \"filter\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}], \"Where\": [{\"Condition\": {\"In\": {\"Expressions\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"left\"}}], \"Values\": [[{\"Literal\": {\"Value\": \"1L\"}}]]}}}]}, \"type\": \"Categorical\", \"howCreated\": 1}]"
+        },
+        {
+          "x": 672,
+          "y": 348,
+          "z": 0,
+          "width": 580,
+          "height": 166,
+          "config": "{\"name\": \"v0050\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dExitArchetype.archetype_name\"}], \"Y\": [{\"queryRef\": \"_Measures.Actual Turnover Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dExitArchetype\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"archetype_name\"}, \"Name\": \"dExitArchetype.archetype_name\", \"NativeReferenceName\": \"archetype_name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}, \"Name\": \"_Measures.Actual Turnover Rate\", \"NativeReferenceName\": \"Actual Turnover Rate\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B9E8F'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Turnover rate by exit archetype'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 672, \"y\": 348, \"z\": 0, \"width\": 580, \"height\": 166}}]}"
+        },
+        {
+          "x": 672,
+          "y": 530,
+          "z": 0,
+          "width": 580,
+          "height": 166,
+          "config": "{\"name\": \"v0051\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dSalaryRange.salary_range\"}], \"Y\": [{\"queryRef\": \"_Measures.Actual Turnover Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dSalaryRange\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"salary_range\"}, \"Name\": \"dSalaryRange.salary_range\", \"NativeReferenceName\": \"salary_range\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}, \"Name\": \"_Measures.Actual Turnover Rate\", \"NativeReferenceName\": \"Actual Turnover Rate\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Actual Turnover Rate\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#AD8322'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Churn rate by salary band'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 672, \"y\": 530, \"z\": 0, \"width\": 580, \"height\": 166}}]}"
+        }
+      ],
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0D1B28'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "ReportSection3",
+      "displayName": "Prescriptive Cockpit",
+      "filters": "[]",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "width": 64,
+          "height": 720,
+          "config": "{\"name\": \"s0052\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0A1622'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"z\": 1, \"width\": 64, \"height\": 720}}]}"
+        },
+        {
+          "x": 0,
+          "y": 14,
+          "z": 2,
+          "width": 64,
+          "height": 34,
+          "config": "{\"name\": \"t0053\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"▲\", \"textStyle\": {\"fontSize\": \"13pt\", \"color\": \"#3E82CC\", \"fontFamily\": \"Segoe UI\"}}, {\"value\": \"▲\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#F2A25C\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 14, \"z\": 2, \"width\": 64, \"height\": 34}}]}"
+        },
+        {
+          "x": 0,
+          "y": 48,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0054\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VELA\", \"textStyle\": {\"fontSize\": \"10pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 48, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 120,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0055\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"01\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#7E93A3\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 120, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 176,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0056\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"02\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#7E93A3\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 176, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 0,
+          "y": 232,
+          "z": 2,
+          "width": 64,
+          "height": 30,
+          "config": "{\"name\": \"t0057\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"03\", \"textStyle\": {\"fontSize\": \"11pt\", \"color\": \"#FFFFFF\", \"fontFamily\": \"Segoe UI\", \"fontWeight\": \"bold\"}}], \"horizontalTextAlignment\": \"center\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 232, \"z\": 2, \"width\": 64, \"height\": 30}}]}"
+        },
+        {
+          "x": 20,
+          "y": 264,
+          "z": 2,
+          "width": 24,
+          "height": 3,
+          "config": "{\"name\": \"s0058\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2A25C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 264, \"z\": 2, \"width\": 24, \"height\": 3}}]}"
+        },
+        {
+          "x": 88,
+          "y": 10,
+          "z": 1,
+          "width": 700,
+          "height": 42,
+          "config": "{\"name\": \"t0059\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Prescriptive Cockpit\", \"textStyle\": {\"fontSize\": \"16pt\", \"fontWeight\": \"bold\", \"color\": \"#F2F7FA\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 10, \"z\": 1, \"width\": 700, \"height\": 42}}]}"
+        },
+        {
+          "x": 88,
+          "y": 48,
+          "z": 1,
+          "width": 700,
+          "height": 32,
+          "config": "{\"name\": \"t0060\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Retention Intelligence · Prescriptive Cockpit\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#9FB3C2\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 48, \"z\": 1, \"width\": 700, \"height\": 32}}]}"
+        },
+        {
+          "x": 1016,
+          "y": 24,
+          "z": 1,
+          "width": 240,
+          "height": 30,
+          "config": "{\"name\": \"t0061\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VELA · People Analytics\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"right\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1016, \"y\": 24, \"z\": 1, \"width\": 240, \"height\": 30}}]}"
+        },
+        {
+          "x": 88,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0062\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Expected Avoided Exits\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Expected Avoided Exits\"}, \"Name\": \"_Measures.Expected Avoided Exits\", \"NativeReferenceName\": \"Expected Avoided Exits\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"24D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Expected avoided exits'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 88,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0063\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3E82CC'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 266,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0064\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"door.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 266, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 100,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0065\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"risk × probability × success\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 100, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 324,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0066\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Expected Retention Saving\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Expected Retention Saving\"}, \"Name\": \"_Measures.Expected Retention Saving\", \"NativeReferenceName\": \"Expected Retention Saving\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B9E8F'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"22D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Expected saving'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 324, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 324,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0067\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B9E8F'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 324, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 502,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0068\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"money.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 502, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 336,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0069\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"expected value retained\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 336, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 560,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0070\", \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Required Retention Investment\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Required Retention Investment\"}, \"Name\": \"_Measures.Required Retention Investment\", \"NativeReferenceName\": \"Required Retention Investment\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"22D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}}}], \"categoryLabels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Retention investment'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 560,
+          "y": 98,
+          "z": 2,
+          "width": 4,
+          "height": 84,
+          "config": "{\"name\": \"s0071\", \"singleVisual\": {\"visualType\": \"shape\", \"objects\": {\"shape\": [{\"properties\": {\"tileShape\": {\"expr\": {\"Literal\": {\"Value\": \"'rectangle'\"}}}}}], \"fill\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"outline\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#DE7024'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 560, \"y\": 98, \"z\": 2, \"width\": 4, \"height\": 84}}]}"
+        },
+        {
+          "x": 738,
+          "y": 96,
+          "z": 3,
+          "width": 26,
+          "height": 26,
+          "config": "{\"name\": \"i0072\", \"singleVisual\": {\"visualType\": \"image\", \"objects\": {\"general\": [{\"properties\": {\"imageUrl\": {\"expr\": {\"ResourcePackageItem\": {\"PackageName\": \"RegisteredResources\", \"PackageType\": 1, \"ItemName\": \"target.png\"}}}}}], \"imageScaling\": [{\"properties\": {\"imageScalingType\": {\"expr\": {\"Literal\": {\"Value\": \"'Fit'\"}}}}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 738, \"y\": 96, \"z\": 3, \"width\": 26, \"height\": 26}}]}"
+        },
+        {
+          "x": 572,
+          "y": 163,
+          "z": 2,
+          "width": 202,
+          "height": 30,
+          "config": "{\"name\": \"t0073\", \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"action cost, all at-risk\", \"textStyle\": {\"fontSize\": \"8pt\", \"color\": \"#6E8598\", \"fontFamily\": \"Segoe UI\"}}], \"horizontalTextAlignment\": \"left\"}]}}]}, \"drillFilterOtherVisuals\": true}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 572, \"y\": 163, \"z\": 2, \"width\": 202, \"height\": 30}}]}"
+        },
+        {
+          "x": 796,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0074\", \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Cost Adjustment.Cost Adjustment\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"Cost Adjustment\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Cost Adjustment\"}, \"Name\": \"Cost Adjustment.Cost Adjustment\", \"NativeReferenceName\": \"Cost Adjustment\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Cost adjustment ×'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 796, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 1032,
+          "y": 84,
+          "z": 0,
+          "width": 220,
+          "height": 112,
+          "config": "{\"name\": \"v0075\", \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Retention Success.Retention Success\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"Retention Success\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"Retention Success\"}, \"Name\": \"Retention Success.Retention Success\", \"NativeReferenceName\": \"Retention Success\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"data\": [{\"properties\": {\"mode\": {\"expr\": {\"Literal\": {\"Value\": \"'Dropdown'\"}}}}}], \"header\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Retention success rate'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1032, \"y\": 84, \"z\": 0, \"width\": 220, \"height\": 112}}]}"
+        },
+        {
+          "x": 88,
+          "y": 212,
+          "z": 0,
+          "width": 716,
+          "height": 484,
+          "config": "{\"name\": \"v0076\", \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"fEmployeeTurnover.employee_id\"}, {\"queryRef\": \"dDepartment.department_name\"}, {\"queryRef\": \"fEmployeeTurnover.risk_quadrant\"}, {\"queryRef\": \"fEmployeeTurnover.shap_main_driver_feature\"}, {\"queryRef\": \"fEmployeeTurnover.shap_driver_direction\"}, {\"queryRef\": \"_Measures.Average Churn Probability\"}, {\"queryRef\": \"_Measures.Estimated Loss (Projected)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"d\", \"Entity\": \"dDepartment\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"employee_id\"}, \"Name\": \"fEmployeeTurnover.employee_id\", \"NativeReferenceName\": \"employee_id\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"department_name\"}, \"Name\": \"dDepartment.department_name\", \"NativeReferenceName\": \"department_name\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"risk_quadrant\"}, \"Name\": \"fEmployeeTurnover.risk_quadrant\", \"NativeReferenceName\": \"risk_quadrant\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"shap_main_driver_feature\"}, \"Name\": \"fEmployeeTurnover.shap_main_driver_feature\", \"NativeReferenceName\": \"shap_main_driver_feature\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"shap_driver_direction\"}, \"Name\": \"fEmployeeTurnover.shap_driver_direction\", \"NativeReferenceName\": \"shap_driver_direction\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Average Churn Probability\"}, \"Name\": \"_Measures.Average Churn Probability\", \"NativeReferenceName\": \"Average Churn Probability\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Estimated Loss (Projected)\"}, \"Name\": \"_Measures.Estimated Loss (Projected)\", \"NativeReferenceName\": \"Estimated Loss (Projected)\"}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"grid\": [{\"properties\": {\"gridVertical\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}, \"gridHorizontal\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"gridHorizontalColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1E3850'\"}}}}}, \"gridHorizontalWeight\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"outlineColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"outlineWeight\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"rowPadding\": {\"expr\": {\"Literal\": {\"Value\": \"4D\"}}}}}], \"columnHeaders\": [{\"properties\": {\"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9FB3C2'\"}}}}}, \"backColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"outline\": {\"expr\": {\"Literal\": {\"Value\": \"'BottomOnly'\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"values\": [{\"properties\": {\"fontColorPrimary\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C9D6E0'\"}}}}}, \"fontColorSecondary\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C9D6E0'\"}}}}}, \"backColorPrimary\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"backColorSecondary\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#17304A'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"total\": [{\"properties\": {\"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"backColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Employees at critical risk — action list'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 88, \"y\": 212, \"z\": 0, \"width\": 716, \"height\": 484}}]}"
+        },
+        {
+          "x": 820,
+          "y": 212,
+          "z": 0,
+          "width": 436,
+          "height": 234,
+          "config": "{\"name\": \"v0077\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"fEmployeeTurnover.shap_main_driver_feature\"}], \"Y\": [{\"queryRef\": \"_Measures.Total Employees\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"fEmployeeTurnover\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"shap_main_driver_feature\"}, \"Name\": \"fEmployeeTurnover.shap_main_driver_feature\", \"NativeReferenceName\": \"shap_main_driver_feature\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}, \"Name\": \"_Measures.Total Employees\", \"NativeReferenceName\": \"Total Employees\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3E82CC'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Top predictive driver (SHAP)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 820, \"y\": 212, \"z\": 0, \"width\": 436, \"height\": 234}}]}"
+        },
+        {
+          "x": 820,
+          "y": 462,
+          "z": 0,
+          "width": 436,
+          "height": 234,
+          "config": "{\"name\": \"v0078\", \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"dPerformanceCluster.cluster_name\"}], \"Y\": [{\"queryRef\": \"_Measures.Total Employees\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"s\", \"Entity\": \"dPerformanceCluster\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"s\"}}, \"Property\": \"cluster_name\"}, \"Name\": \"dPerformanceCluster.cluster_name\", \"NativeReferenceName\": \"cluster_name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}, \"Name\": \"_Measures.Total Employees\", \"NativeReferenceName\": \"Total Employees\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Employees\"}}}]}, \"drillFilterOtherVisuals\": true, \"objects\": {\"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#8E71BC'\"}}}}}}}], \"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"9D\"}}}}}], \"categoryAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"valueAxis\": [{\"properties\": {\"showAxisTitle\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}], \"legend\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"false\"}}}}}]}, \"vcObjects\": {\"background\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#14293C'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}], \"border\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#22405A'\"}}}}}, \"radius\": {\"expr\": {\"Literal\": {\"Value\": \"12D\"}}}}}], \"dropShadow\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#000000'\"}}}}}, \"position\": {\"expr\": {\"Literal\": {\"Value\": \"'Outer'\"}}}, \"preset\": {\"expr\": {\"Literal\": {\"Value\": \"'Custom'\"}}}, \"shadowSpread\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}, \"shadowBlur\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}, \"angle\": {\"expr\": {\"Literal\": {\"Value\": \"90D\"}}}, \"shadowDistance\": {\"expr\": {\"Literal\": {\"Value\": \"3D\"}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"75D\"}}}}}], \"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Headcount by behavioural cluster'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F2F7FA'\"}}}}}, \"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"11D\"}}}, \"fontFamily\": {\"expr\": {\"Literal\": {\"Value\": \"'Segoe UI Semibold'\"}}}, \"alignment\": {\"expr\": {\"Literal\": {\"Value\": \"'left'\"}}}}}]}}, \"layouts\": [{\"id\": 0, \"position\": {\"x\": 820, \"y\": 462, \"z\": 0, \"width\": 436, \"height\": 234}}]}"
+        }
+      ],
+      "config": "{\"objects\": {\"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0D1B28'\"}}}}}, \"transparency\": {\"expr\": {\"Literal\": {\"Value\": \"0D\"}}}}}]}}",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "config": "{\"version\": \"5.43\", \"themeCollection\": {\"customTheme\": {\"name\": \"VELA People Analytics.json\", \"version\": \"5.43\", \"type\": 1}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"settings\": {\"useStylableVisualContainerHeader\": true}}",
+  "layoutOptimization": 0
+}

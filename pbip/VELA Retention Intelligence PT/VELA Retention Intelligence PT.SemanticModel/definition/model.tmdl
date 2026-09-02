@@ -1,0 +1,25 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["fRotatividadeColaboradores","dDepartamento","dFaixaSalarial","dTempoDeCasa","dClusterComportamental","dArquetipoSaida"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fRotatividadeColaboradores
+ref table dDepartamento
+ref table dFaixaSalarial
+ref table dTempoDeCasa
+ref table dClusterComportamental
+ref table dArquetipoSaida
+ref table _Medidas
+ref table 'Cost Adjustment'
+ref table 'Retention Success'
+
+ref cultureInfo pt-BR
+

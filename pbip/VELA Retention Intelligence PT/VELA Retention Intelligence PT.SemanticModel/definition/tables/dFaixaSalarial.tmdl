@@ -1,0 +1,33 @@
+table dFaixaSalarial
+	lineageTag: bb76d739-f283-47e3-b636-9c7efd12c545
+
+	column chave_faixa_salarial
+		dataType: int64
+		isHidden
+		lineageTag: 54a6870c-91e2-4b0c-a4d4-2a07ff29012f
+		summarizeBy: none
+		sourceColumn: chave_faixa_salarial
+
+	column faixa_salarial
+		dataType: string
+		lineageTag: 8a7e615f-e6a1-4ad0-86b3-b62c36857bdc
+		summarizeBy: none
+		sourceColumn: faixa_salarial
+		sortByColumn: chave_faixa_salarial
+
+	column ordem_faixa_salarial
+		dataType: int64
+		lineageTag: e88c02fd-2f6b-4378-b4f3-16ec4056ffa8
+		summarizeBy: none
+		sourceColumn: ordem_faixa_salarial
+
+	partition dFaixaSalarial = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_pt\dFaixaSalarial.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"chave_faixa_salarial", Int64.Type}, {"faixa_salarial", type text}, {"ordem_faixa_salarial", Int64.Type}}, "en-US")
+				in
+				    Typed
+

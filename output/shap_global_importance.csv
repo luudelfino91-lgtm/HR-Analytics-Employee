@@ -1,0 +1,21 @@
+,mean_abs_shap
+num__satisfaction_level,1.1427484262778334
+num__risk_score_raw,0.8801147571830712
+num__is_project_extreme,0.8501749916315942
+num__time_spend_company,0.46722592179080524
+num__satisfaction_x_evaluation,0.41593292988258646
+num__average_montly_hours,0.3371562111834281
+num__last_evaluation,0.32719931862172674
+num__workload_intensity_idx,0.31561650225106463
+num__hours_per_project,0.2840209538893952
+num__eval_satisfaction_gap,0.2748069728123282
+num__salary_rank,0.20729068726015468
+num__Work_accident,0.19005537036212058
+num__is_critical_tenure_window,0.11024608982753041
+num__number_project,0.08680646751933356
+cat__department_product_mng,0.05607164958959379
+cat__department_sales,0.05064838562734351
+cat__department_technical,0.0454378884255773
+cat__tenure_bucket_3 yrs (transition),0.03335296303091656
+cat__department_support,0.03202385658687729
+cat__salary_low,0.030803935147459795

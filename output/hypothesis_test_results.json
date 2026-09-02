@@ -1,0 +1,280 @@
+{
+  "H1": {
+    "hipotese": "H1 - Sobrecarga vs Subutilização",
+    "mannwhitney_horas_p": 1.2769565984354332e-08,
+    "mannwhitney_projetos_p": 0.016691756612109285,
+    "d_horas": 0.16779192664638887,
+    "d_projetos": 0.055862357794769946,
+    "pct_saida_baixa_carga": 28.563427611313358,
+    "pct_saida_alta_carga": 21.758611033323998,
+    "pct_saida_carga_normal": 49.67796135536264,
+    "churn_rate_por_faixa_horas": {
+      "(0, 130]": {
+        "churn_rate": 0.264,
+        "n": 770
+      },
+      "(130, 150]": {
+        "churn_rate": 0.387,
+        "n": 2283
+      },
+      "(150, 160]": {
+        "churn_rate": 0.379,
+        "n": 1287
+      },
+      "(160, 200]": {
+        "churn_rate": 0.026,
+        "n": 3184
+      },
+      "(200, 230]": {
+        "churn_rate": 0.094,
+        "n": 2371
+      },
+      "(230, 250]": {
+        "churn_rate": 0.237,
+        "n": 1902
+      },
+      "(250, 260]": {
+        "churn_rate": 0.302,
+        "n": 1058
+      },
+      "(260, 320]": {
+        "churn_rate": 0.431,
+        "n": 2144
+      }
+    },
+    "conclusao": "Distribuição de saídas é BIMODAL: coexistem um cluster de burnout (>=250h/mês, >=6 projetos, quase sempre com satisfaction_level muito baixo e last_evaluation muito alto) e um cluster de subutilização/desengajamento (<150h/mês, <=3 projetos, satisfação baixa e avaliação mediana-baixa). Não existe um único 'perfil de churn' — são duas populações de risco distintas."
+  },
+  "H2": {
+    "hipotese": "H2 - Descompasso Desempenho x Sentimento",
+    "correlacao_pearson": 0.1050212139714849,
+    "p_pearson": 4.7043115582916e-38,
+    "correlacao_spearman": 0.16240691595012116,
+    "n_estrela_infeliz": 1271,
+    "churn_rate_estrela_infeliz": 0.7065302911093627,
+    "churn_rate_geral": 0.2380825388359224,
+    "risco_relativo_estrela_infeliz": 2.9675855044383455,
+    "n_sortudo_confortavel": 114,
+    "churn_rate_sortudo_confortavel": 0.008771929824561403,
+    "ttest_delta_p": 0.0,
+    "conclusao": "Correlação linear entre avaliação e satisfação é fraca (Pearson r=0.105), confirmando que NÃO andam sempre juntas. O subgrupo 'estrela infeliz' (alta avaliação, baixa satisfação, n=1271) tem churn de 70.7% vs 23.8% da base — risco relativo de 2.97x. É o segmento de maior risco de perda de talento de alta performance."
+  },
+  "H3": {
+    "hipotese": "H3 - Janelas Críticas de Carreira",
+    "churn_rate_por_tenure": {
+      "2": 0.016,
+      "3": 0.246,
+      "4": 0.348,
+      "5": 0.566,
+      "6": 0.291,
+      "7": 0.0,
+      "8": 0.0,
+      "10": 0.0
+    },
+    "n_por_tenure": {
+      "2": 3244,
+      "3": 6443,
+      "4": 2557,
+      "5": 1473,
+      "6": 718,
+      "7": 188,
+      "8": 162,
+      "10": 214
+    },
+    "chi2_tenurebin_left_p": 0.0,
+    "cramers_v_tenure": 0.3568197991393304,
+    "churn_promocao_na_janela_critica": {
+      "0": 0.412,
+      "1": 0.058
+    },
+    "churn_salario_na_janela_critica": {
+      "low": 0.479,
+      "medium": 0.362,
+      "high": 0.122
+    },
+    "conclusao": "A retenção é quase total em tenure=2 anos (churn ~1.6%, período de 'lua de mel'), começa a colapsar em tenure=3 (24.6%), acelera em tenure=4 (34.8%) e atinge o pico crítico em tenure=5 (56.6% — mais de 1 em cada 2 saem). Em tenure=6 o churn recua para 29.1% e a partir de tenure=7 cai a zero — um efeito de sobrevivência: quem supera a janela de 3 a 6 anos sem sair tende a ficar indefinidamente. Dentro dessa janela crítica (4-6 anos), ausência de promoção nos últimos 5 anos e salário baixo/médio amplificam fortemente o risco; salário alto e/ou promoção recente funcionam como amortecedores claros do efeito de tenure."
+  },
+  "H4": {
+    "hipotese": "H4 - Heterogeneidade Departamental",
+    "churn_rate_por_departamento": {
+      "hr": 0.291,
+      "accounting": 0.266,
+      "technical": 0.256,
+      "support": 0.249,
+      "sales": 0.245,
+      "marketing": 0.237,
+      "IT": 0.222,
+      "product_mng": 0.22,
+      "RandD": 0.154,
+      "management": 0.144
+    },
+    "chi2_dept_left_p": 7.042130463822518e-15,
+    "cramers_v_dept": 0.07608384104340461,
+    "correlacoes_por_departamento": {
+      "IT": {
+        "corr_satisfaction_left": -0.442,
+        "corr_hours_left": 0.123,
+        "n": 1227
+      },
+      "RandD": {
+        "corr_satisfaction_left": -0.325,
+        "corr_hours_left": 0.088,
+        "n": 787
+      },
+      "accounting": {
+        "corr_satisfaction_left": -0.424,
+        "corr_hours_left": 0.069,
+        "n": 767
+      },
+      "hr": {
+        "corr_satisfaction_left": -0.428,
+        "corr_hours_left": -0.018,
+        "n": 739
+      },
+      "management": {
+        "corr_satisfaction_left": -0.358,
+        "corr_hours_left": 0.052,
+        "n": 630
+      },
+      "marketing": {
+        "corr_satisfaction_left": -0.377,
+        "corr_hours_left": 0.018,
+        "n": 858
+      },
+      "product_mng": {
+        "corr_satisfaction_left": -0.302,
+        "corr_hours_left": 0.083,
+        "n": 902
+      },
+      "sales": {
+        "corr_satisfaction_left": -0.38,
+        "corr_hours_left": 0.047,
+        "n": 4140
+      },
+      "support": {
+        "corr_satisfaction_left": -0.391,
+        "corr_hours_left": 0.056,
+        "n": 2229
+      },
+      "technical": {
+        "corr_satisfaction_left": -0.405,
+        "corr_hours_left": 0.136,
+        "n": 2720
+      }
+    },
+    "conclusao": "O qui-quadrado confirma associação estatisticamente significativa entre departamento e turnover (p<0.001), mas o Cramér's V é FRACO (~0.076) — o NÍVEL de churn varia por área (HR 29.1% e Accounting 26.6% no topo; Management 14.4% e R&D 15.4% no piso), mas o MECANISMO é compartilhado: em praticamente todos os departamentos a correlação satisfação-saída é negativa e a de horas-saída é positiva, com magnitudes semelhantes. Isso indica um driver estrutural comum (satisfação + sobrecarga) que atinge áreas técnicas e comerciais de forma parecida — departamento explica principalmente a INTENSIDADE do problema, não uma dinâmica causal diferente."
+  },
+  "H5": {
+    "hipotese": "H5 - Retenção Inelástica",
+    "n_perfil_alto_risco": 1658,
+    "pct_da_base": 11.054070271351424,
+    "taxa_retencao_apesar_do_risco": 0.44028950542822676,
+    "comparacao_ficou_vs_saiu_pct": {
+      "salary": {
+        "ficou": {
+          "low": 0.453,
+          "medium": 0.444,
+          "high": 0.103
+        },
+        "saiu": {
+          "low": 0.595,
+          "medium": 0.388,
+          "high": 0.017
+        }
+      },
+      "promotion_last_5years": {
+        "ficou": {
+          "0": 0.985,
+          "1": 0.015
+        },
+        "saiu": {
+          "0": 0.997,
+          "1": 0.003
+        }
+      },
+      "Work_accident": {
+        "ficou": {
+          "0": 0.804,
+          "1": 0.196
+        },
+        "saiu": {
+          "0": 0.95,
+          "1": 0.05
+        }
+      }
+    },
+    "chi2_salario_dentro_alto_risco_p": 1.5136366682677177e-16,
+    "conclusao": "1658 colaboradores (11.1% da base) exibem perfil estatístico de alto risco (satisfação <=0.3 combinada com sobrecarga ou tenure crítico), e ainda assim 44.0% permanecem na empresa. A composição salarial e a ausência de sinistros/acidentes sugerem que dentro desse grupo 'inelástico', fatores de estabilidade financeira e vínculo funcionam como barreira de saída mesmo sob insatisfação alta — indicando que a insatisfação sozinha é necessária mas não suficiente para prever a saída; a decisão de sair também depende do custo de oportunidade externo do colaborador (proxied aqui por salário)."
+  },
+  "H6": {
+    "hipotese": "H6 - Taxonomia dos Desligados (benchmark externo)",
+    "silhouette_por_k": {
+      "2": 0.5994602721098665,
+      "3": 0.7948991403940611,
+      "4": 0.697707564573893,
+      "5": 0.6238631653353953
+    },
+    "k_otimo_validado": 3,
+    "perfil_clusters": {
+      "0": {
+        "satisfaction_level": 0.412,
+        "last_evaluation": 0.517,
+        "average_montly_hours": 150.957,
+        "number_project": 2.19,
+        "time_spend_company": 3.077,
+        "n": 1667,
+        "pct_dos_desligados": 46.7,
+        "arquetipo": "Baixo Engajamento / Mau Encaixe (mediano em ambos)"
+      },
+      "1": {
+        "satisfaction_level": 0.808,
+        "last_evaluation": 0.916,
+        "average_montly_hours": 241.802,
+        "number_project": 4.528,
+        "time_spend_company": 5.058,
+        "n": 965,
+        "pct_dos_desligados": 27.0,
+        "arquetipo": "Talento Aliciado (satisfeito e bem avaliado, mesmo assim saiu)"
+      },
+      "2": {
+        "satisfaction_level": 0.111,
+        "last_evaluation": 0.871,
+        "average_montly_hours": 272.321,
+        "number_project": 6.12,
+        "time_spend_company": 4.081,
+        "n": 939,
+        "pct_dos_desligados": 26.3,
+        "arquetipo": "Burnout Extremo (excelente avaliação, satisfação no piso)"
+      }
+    },
+    "conclusao": "Confirmado com validação estatística (silhouette k=3 = 0.795, o maior entre k=2..5, ou seja k=3 é de fato o número natural de grupos): entre os 3571 colaboradores que saíram, emergem 3 arquétipos nitidamente separados — (1) 'Baixo Engajamento/Mau Encaixe' (46.7%, satisfação e avaliação medianas-baixas, tenure curto, poucos projetos — provável desalinhamento de expectativa no início do vínculo); (2) 'Talento Aliciado' (27.0%, satisfação e avaliação ALTAS, mesmo assim saiu — não é um problema de engajamento interno, é competitividade de mercado/oferta externa); e (3) 'Burnout Extremo' (26.3%, avaliação excelente, satisfação no piso, 272h/mês em média, 6+ projetos — exaustão pura). Este achado é crítico porque revela que quase 1 em cada 3 desligamentos (o cluster 'Talento Aliciado') é INVISÍVEL a qualquer estratégia de retenção baseada em monitorar satisfação — esse grupo está satisfeito quando sai. A ação de retenção correta para eles é competitividade salarial e trilha de carreira, não pesquisa de clima."
+  },
+  "H7": {
+    "hipotese": "H7 - Acidente de Trabalho (efeito protetor) e Formato em U de Projetos (benchmark externo)",
+    "churn_rate_com_acidente": 0.07791609036422315,
+    "churn_rate_sem_acidente": 0.2651597817614965,
+    "chi2_acidente_p": 9.55823958002199e-80,
+    "odds_ratio_saida_dado_acidente": 0.23417577895355676,
+    "churn_rate_por_numero_projetos": {
+      "2": 0.656,
+      "3": 0.018,
+      "4": 0.094,
+      "5": 0.222,
+      "6": 0.558,
+      "7": 1.0
+    },
+    "n_por_numero_projetos": {
+      "2": 2388,
+      "3": 4055,
+      "4": 4365,
+      "5": 2761,
+      "6": 1174,
+      "7": 256
+    },
+    "chi2_projetos_p": 0.0,
+    "cramers_v_projetos": 0.5985507354174702,
+    "n_colaboradores_hours_maior_300": 170,
+    "n_hours300_ficaram": 0,
+    "n_hours300_sairam": 170,
+    "conclusao": "(a) Acidente de trabalho reduz drasticamente a chance de saída: churn de 7.8% entre quem sofreu acidente vs. 26.5% entre quem não sofreu (qui-quadrado p=9.6e-80, odds ratio=0.23 — chance de sair é ~4.3x menor). Efeito contraintuitivo, mas replicado de forma consistente em análises independentes desta base; hipótese de negócio mais provável é viés de sobrevivência/vínculo (empregados com mais tempo de casa acumulam mais exposição a acidentes E mais vínculo com a empresa) combinado a possível efeito de estabilidade (afastamento/retorno cria maior aderência ao emprego atual). (b) number_project tem relação em J/U extremamente acentuada, não linear (Cramér's V = 0.599, p<0.001): 2 projetos = 65.6% de churn (subutilização), 3 projetos = apenas 1.8% (ponto ótimo, quase zero risco), subindo progressivamente até 7 projetos = 100% de churn (nenhum dos 256 colaboradores com 7 projetos permaneceu). (c) Confirma-se também um teto absoluto: dos 170 colaboradores com >=300h/mês, 170 saíram e ZERO permaneceram — 300h/mês é, nesta base, um limiar de saída certa."
+  }
+}

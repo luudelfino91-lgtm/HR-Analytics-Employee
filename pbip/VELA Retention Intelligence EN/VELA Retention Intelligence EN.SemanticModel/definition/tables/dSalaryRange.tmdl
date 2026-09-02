@@ -1,0 +1,28 @@
+table dSalaryRange
+
+	column 'salary_key'
+		dataType: int64
+		sourceColumn: salary_key
+		summarizeBy: none
+		isHidden
+
+	column 'salary_range'
+		dataType: string
+		sourceColumn: salary_range
+		summarizeBy: none
+		sortByColumn: salary_key
+
+	column 'salary_rank'
+		dataType: int64
+		sourceColumn: salary_rank
+		summarizeBy: none
+
+	partition dSalaryRange = m
+		mode: import
+		source =
+			let
+			    Source = Csv.Document(File.Contents("C:\Users\lucas\Desktop\Portfolio\HR Analytics\archive (1)\powerbi_en\dSalaryRange.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Typed = Table.TransformColumnTypes(Promoted, {{"salary_key", Int64.Type}, {"salary_range", type text}, {"salary_rank", Int64.Type}}, "en-US")
+			in
+			    Typed
